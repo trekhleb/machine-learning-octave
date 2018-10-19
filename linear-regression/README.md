@@ -13,3 +13,7 @@
 ## Hypothesis
 
 ![Hypothesis](../images/linear-regression-hypothesis.svg)
+
+## Cost Function
+
+![Cost Function](../images/linear-regression-cost-function.svg)
