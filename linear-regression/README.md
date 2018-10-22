@@ -79,6 +79,12 @@ _n_ - number of features
 
 > When we use term "batch" for gradient descent it means that each step of gradient descent uses **all** the training examples (as you might see from the formula above).
 
+## Feature Scaling
+
+To make linear regression and gradient descent algorithm work correctly we need to make sure that features are on a similar scale (![Feature Scaling](../images/linear-regression/feature-scaling.svg)).
+
+For example "apartment size" feature (e.g. 120 m<sup>2</sup>) is much bigger than the "number of rooms" feature (e.g. 2).
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
