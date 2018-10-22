@@ -95,7 +95,7 @@ In order to scale the features we need to do **mean normalization**
 
 ![mu-j](../images/linear-regression/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
 
-![s-j](../images/linear-regression/mu-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
+![s-j](../images/linear-regression/s-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
 
 ## References
 
