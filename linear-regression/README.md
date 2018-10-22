@@ -97,6 +97,22 @@ In order to scale the features we need to do **mean normalization**
 
 ![s-j](../images/linear-regression/s-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
 
+## Polynomial Regression
+
+Polynomial regression is a form of regression analysis in which the relationship between the independent variable _x_ and the dependent variable _y_ is modelled as an _n<sup>th</sup>_ degree polynomial in _x_.
+
+Although polynomial regression fits a nonlinear model to the data, as a statistical estimation problem it is linear, in the sense that the hypothesis function is linear in the unknown parameters that are estimated from the data. For this reason, polynomial regression is considered to be a special case of multiple linear regression.
+
+![Polynomial Regression](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Polyreg_scheffe.svg/650px-Polyreg_scheffe.svg.png)
+
+Example of a cubic polynomial regression, which is a type of linear regression.
+
+You may form polynomial regression by adding new polynomial features.
+
+For example if the price of the apartment is in non-linear dependency of its size then you might add several new size-related features. 
+
+![Polynomial Regression](../images/linear-regression/polynomial-regression.svg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
