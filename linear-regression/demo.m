@@ -56,3 +56,27 @@ plot(1:num_iterations, J_history);
 xlabel('Iteration');
 ylabel('J(\theta)');
 title('Gradient Descent Progress');
+
+% Plotting hypothesis plane on top of training set -----------------------------
+fprintf('Plotting hypothesis plane on top of training set...\n');
+
+% Get apartment size and rooms boundaries.
+apt_sizes = X_normalized(:, 2);
+apt_rooms = X_normalized(:, 3);
+apt_size_range = linspace(min(apt_sizes), max(apt_sizes), 10);
+apt_rooms_range = linspace(min(apt_rooms), max(apt_rooms), 10);
+
+% Calculate predictions for each possible combination of rooms number and appartment size.
+apt_prices = zeros(length(apt_size_range), length(apt_rooms_range));
+for apt_size_index = 1:length(apt_size_range)
+    for apt_room_index = 1:length(apt_rooms_range)
+        X = [1, apt_size_range(apt_size_index), apt_rooms_range(apt_room_index)];
+        apt_prices(apt_size_index, apt_room_index) = h(X, theta);
+    end
+end
+
+% Plot the plane on top of training data to see how it feets them.
+subplot(2, 2, 2);
+hold on;
+mesh(apt_size_range, apt_rooms_range, apt_prices);
+hold off;
