@@ -31,8 +31,11 @@ zlabel('Price');
 fprintf('Running linear regression...\n');
 
 alpha = 0.1;
-num_iterations = 100;
+num_iterations = 50;
 [theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, num_iterations);
+
+fprintf('- Initial cost: %f\n', J_history(1));
+fprintf('- Optimized cost: %f\n', J_history(end));
 
 % Plotting normalized training data --------------------------------------------
 fprintf('Plotting normalized training data...\n');
