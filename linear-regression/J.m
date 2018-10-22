@@ -1,9 +1,13 @@
-% Cost function.
+% COST function.
 % It shows how accurate our model is based on current model parameters.
 function [cost] = J(X, y, theta)
-    % X is input features - (m x n) matrix.
-    % theta is our model parameters - (n x 1) vector.
-    % y is a vector of correct output - (m x 1) vector.
+    % Input:
+    % X - input features - (m x n) matrix.
+    % theta - our model parameters - (n x 1) vector.
+    % y - a vector of correct output - (m x 1) vector.
+    %
+    % Output:
+    % cost - number that represents the cost (error) of our model with specified parameters theta.
     %
     % Where:
     % m - number of training examples,

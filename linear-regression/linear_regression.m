@@ -1,21 +1,20 @@
-% Clear variables and a screen.
-clear; close all; clc;
+% LINEAR REGRESSION function.
+function [theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, num_iterations)
+    % Calculate the number of training examples.
+    m = size(y, 1);
 
-% Loading training data from file.
-data = load('house_prices.csv');
+    % Calculate the number of features.
+    n = size(X, 2);
 
-% Split data into features and results.
-X = data(:, 1:2);
-y = data(:, 3);
+    % Normalize features.
+    [X_normalized mu sigma] = feature_normalize(X);
 
-% Calculate the number of training examples.
-m = size(y, 1);
+    % Add a column of ones to X.
+    X_normalized = [ones(m, 1), X_normalized];
 
-% Calculate the number of features.
-n = size(X, 2);
+    % Initialize model parameters.
+    initial_theta = zeros(n + 1, 1);
 
-% Add a column of ones to X.
-X = [ones(m, 1), X];
-
-% Initialize fitting (theta) parameters.
-theta = zeros(n + 1, 1);
+    % Run gradient descent.
+    [theta, J_history] = gradient_descent(X_normalized, y, initial_theta, alpha, num_iterations);
+end
