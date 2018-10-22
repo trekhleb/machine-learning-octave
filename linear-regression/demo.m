@@ -37,6 +37,14 @@ num_iterations = 50;
 fprintf('- Initial cost: %f\n', J_history(1));
 fprintf('- Optimized cost: %f\n', J_history(end));
 
+% Calculate model parameters using normal equation -----------------------------
+fprintf('Calculate model parameters using normal equation...\n');
+
+[theta_normal] = normal_equation(X, y);
+normal_cost = J(X, y, theta_normal);
+
+fprintf('- Normal function cost: %f\n', normal_cost);
+
 % Plotting normalized training data --------------------------------------------
 fprintf('Plotting normalized training data...\n');
 

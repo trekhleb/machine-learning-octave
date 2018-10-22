@@ -113,6 +113,14 @@ For example if the price of the apartment is in non-linear dependency of its siz
 
 ![Polynomial Regression](../images/linear-regression/polynomial-regression.svg)
 
+## Normal Equation
+
+There is a closed-form solution to linear regression exists and it looks like the following:
+
+![Normal Equation](../images/linear-regression/normal-equation.svg)
+
+Using this formula does not require any feature scaling, and you will get an exact solution in one calculation: there is no “loop until convergence” like in gradient descent.
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
