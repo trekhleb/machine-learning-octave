@@ -69,7 +69,7 @@ We need to simultaneously update ![Theta](../images/linear-regression/theta-j.sv
 
 ![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-_x<sup>i</sup>_ - input (features) of _i<sup>th</sup>_ training example
+![x-i](../images/linear-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
@@ -81,9 +81,21 @@ _n_ - number of features
 
 ## Feature Scaling
 
-To make linear regression and gradient descent algorithm work correctly we need to make sure that features are on a similar scale (![Feature Scaling](../images/linear-regression/feature-scaling.svg)).
+To make linear regression and gradient descent algorithm work correctly we need to make sure that features are on a similar scale.
+
+![Feature Scaling](../images/linear-regression/feature-scaling.svg)
 
 For example "apartment size" feature (e.g. 120 m<sup>2</sup>) is much bigger than the "number of rooms" feature (e.g. 2).
+
+In order to scale the features we need to do **mean normalization**
+
+![Mean Normalization](../images/linear-regression/mean-normalization.svg)
+
+![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+
+![mu-j](../images/linear-regression/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
+
+![s-j](../images/linear-regression/mu-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
 
 ## References
 
