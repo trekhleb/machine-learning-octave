@@ -100,7 +100,22 @@ _n_ - number of features
 
 > When we use term "batch" for gradient descent it means that each step of gradient descent uses **all** the training examples (as you might see from the formula above).
 
+## Multi-class Classification (One-vs-All)
+
+Very often we need to do not just binary (0/1) classification but rather multi-class ones, like:
+
+- Weather: Sunny, Cloudy, Rain, Snow
+- Email tagging: Work, Friends, Family
+
+To handle these type of issues we may train a logistic regression classifier ![Multi-class classifier](../images/logistic-regression/multi-class-classifier.svg) several times for each class _i_ to predict the probability that _y = i_.
+
+![One-vs-All](https://i.stack.imgur.com/zKpJy.jpg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
 - [Sigmoid Function on Wikipedia](https://en.wikipedia.org/wiki/Sigmoid_function)
+- [Gradient Descent on Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)
+- [Gradient Descent by Suryansh S.](https://hackernoon.com/gradient-descent-aynk-7cbe95a778da)
+- [Gradient Descent by Niklas Donges](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
+- [One vs All on Stackexchange](https://stats.stackexchange.com/questions/318520/many-binary-classifiers-vs-single-multiclass-classifier)
