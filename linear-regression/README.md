@@ -159,8 +159,8 @@ In this case the **gradient descent** formula will look like the following:
 
 - [demo.m](demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
 - [linear_regression.m](linear_regression.m) - linear regression algorithm.
-- [hypothesis.m](./h.m) - linear regression hypothesis function.
-- [cost_function.m](./J.m) - linear regression cost function.
+- [hypothesis.m](./hypothesis.m) - linear regression hypothesis function.
+- [cost_function.m](./cost_function.m) - linear regression cost function.
 - [feature_normalize.m](feature_normalize.m) - function that normalizes features.
 - [gradient_descent.m](gradient_descent.m) - function that performs gradient descent.
 - [house_prices.csv](house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
