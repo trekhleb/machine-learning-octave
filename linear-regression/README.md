@@ -143,11 +143,15 @@ Here are couple of options that may be addressed:
     - Keep all the features, but reduce magnitude/values of model parameters (thetas).
     - Works well when we have a lot of features, each of which contributes a bit to predicting _y_.
 
-Regularization works by adding regularization parameter to the cost function:
+Regularization works by adding regularization parameter to the **cost function**:
 
 ![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
 
 ![regularization parameter](../images/shared/lambda.svg) - regularization parameter
+
+In this case the **gradient descent** formula will look like the following:
+
+![Gradient Descent](../images/linear-regression/gradient-descent-3.svg)
 
 ## Files
 

@@ -127,6 +127,27 @@ If we have too many features, the learned hypothesis may fit the **training** se
 
 ![overfitting](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/fittings.jpg)
 
+### Solution to Overfitting
+
+Here are couple of options that may be addressed:
+
+- Reduce the number of features
+    - Manually select which features to keep
+    - Model selection algorithm
+- Regularization
+    - Keep all the features, but reduce magnitude/values of model parameters (thetas).
+    - Works well when we have a lot of features, each of which contributes a bit to predicting _y_.
+
+Regularization works by adding regularization parameter to the **cost function**:
+
+![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
+
+![regularization parameter](../images/shared/lambda.svg) - regularization parameter
+
+In this case the **gradient descent** formula will look like the following:
+
+![Gradient Descent](../images/logistic-regression/gradient-descent-3.svg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
