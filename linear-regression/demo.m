@@ -46,7 +46,7 @@ fprintf('Calculate model parameters using normal equation...\n');
 
 X_normal = [ones(size(X, 1), 1) X];
 theta_normal = normal_equation(X_normal, y);
-normal_cost = J(X_normal, y, theta_normal);
+normal_cost = cost_function(X_normal, y, theta_normal);
 
 fprintf('- Normal function cost: %f\n', normal_cost);
 
@@ -91,7 +91,7 @@ apt_prices = zeros(length(apt_size_range), length(apt_rooms_range));
 for apt_size_index = 1:length(apt_size_range)
     for apt_room_index = 1:length(apt_rooms_range)
         X = [1, apt_size_range(apt_size_index), apt_rooms_range(apt_room_index)];
-        apt_prices(apt_size_index, apt_room_index) = h(X, theta);
+        apt_prices(apt_size_index, apt_room_index) = hypothesis(X, theta);
     end
 end
 

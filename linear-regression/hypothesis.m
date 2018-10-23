@@ -1,6 +1,6 @@
 % HYPOTHESIS function.
 % It predicts the output values y based on the input values X and model parameters.
-function [predictions] = h(X, theta)
+function [predictions] = hypothesis(X, theta)
     % Input:
     % X - input features - (m x n) matrix.
     % theta - our model parameters - (n x 1) vector.

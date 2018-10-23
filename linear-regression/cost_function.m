@@ -1,6 +1,6 @@
 % COST function.
 % It shows how accurate our model is based on current model parameters.
-function [cost] = J(X, y, theta)
+function [cost] = cost_function(X, y, theta)
     % Input:
     % X - input features - (m x n) matrix.
     % theta - our model parameters - (n x 1) vector.
@@ -17,7 +17,7 @@ function [cost] = J(X, y, theta)
     m = size(X, 1);
 
     % Get the difference between predictions and correct output values.
-    differences = h(X, theta) - y;
+    differences = hypothesis(X, theta) - y;
 
     % Calculate current predictions cost.
     cost = (1 / 2 * m) * differences' * differences;
