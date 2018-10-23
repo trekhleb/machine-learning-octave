@@ -1,6 +1,6 @@
 # Linear Regression
 
-Linear regression is a linear model, e.g. a model that assumes a linear relationship between the input variables (_x_) and the single output variable (_y_). More specifically, that output variable (_y_) can be calculated from a linear combination of the input variables (_x_).
+**Linear regression** is a linear model, e.g. a model that assumes a linear relationship between the input variables (_x_) and the single output variable (_y_). More specifically, that output variable (_y_) can be calculated from a linear combination of the input variables (_x_).
 
 ![Linear Regression](https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg)
 
@@ -123,14 +123,14 @@ Using this formula does not require any feature scaling, and you will get an exa
 
 ## Files
 
-- [demo.m](./demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
-- [linear_regression.m](./linear_regression.m) - linear regression algorithm.
+- [demo.m](demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
+- [linear_regression.m](linear_regression.m) - linear regression algorithm.
 - [h.m](./h.m) - linear regression hypothesis function.
 - [J.m](./J.m) - linear regression cost function.
-- [feature_normalize.m](./feature_normalize.m) - function that normalizes features.
-- [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.
-- [house_prices.csv](./house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
-- [normal_equation.m](./normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
+- [feature_normalize.m](feature_normalize.m) - function that normalizes features.
+- [gradient_descent.m](gradient_descent.m) - function that performs gradient descent.
+- [house_prices.csv](house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
+- [normal_equation.m](normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
 
 ## How to Run a Demo
 
