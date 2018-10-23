@@ -117,7 +117,7 @@ To handle these type of issues we may train a logistic regression classifier ![M
 
 ## Regularization
 
-### Overfitting Problem**
+### Overfitting Problem
 
 If we have too many features, the learned hypothesis may fit the **training** set very well:
 

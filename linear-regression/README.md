@@ -122,7 +122,7 @@ Using this formula does not require any feature scaling, and you will get an exa
 
 ## Regularization
 
-### Overfitting Problem**
+### Overfitting Problem
 
 If we have too many features, the learned hypothesis may fit the **training** set very well:
 
@@ -131,6 +131,23 @@ If we have too many features, the learned hypothesis may fit the **training** se
 **But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
 
 ![overfitting](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/t0zit.png)
+
+### Solution to Overfitting
+
+Here are couple of options that may be addressed:
+
+- Reduce the number of features
+    - Manually select which features to keep
+    - Model selection algorithm
+- Regularization
+    - Keep all the features, but reduce magnitude/values of model parameters (thetas).
+    - Works well when we have a lot of features, each of which contributes a bit to predicting _y_.
+
+Regularization works by adding regularization parameter to the cost function:
+
+![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
+
+![regularization parameter](../images/shared/lambda.svg) - regularization parameter
 
 ## Files
 
