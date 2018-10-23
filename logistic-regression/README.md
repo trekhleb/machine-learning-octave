@@ -148,6 +148,38 @@ In this case the **gradient descent** formula will look like the following:
 
 ![Gradient Descent](../images/logistic-regression/gradient-descent-3.svg)
 
+## How to Run a Demo
+
+In order to run the demo you should move to `logistic-regression` folder:
+
+```bash
+cd logistic-regression
+```
+
+Launch Octave console:
+
+```bash
+octave
+```
+
+Launch demo script from Octave console:
+
+```bash
+demo
+```
+
+To see all demo variables you may launch:
+
+```bash
+whos
+```
+
+To exit the demo you may launch:
+
+```bash
+exit
+```
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
