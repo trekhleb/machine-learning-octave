@@ -64,11 +64,11 @@ We need to simultaneously update ![Theta](../images/linear-regression/theta-j.sv
 
 ![Gradient Descent](../images/linear-regression/gradient-descent-2.svg)
 
-![alpha](../images/linear-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+![alpha](../images/shared/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
 
-![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![x-i](../images/linear-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+![x-i](../images/shared/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
@@ -90,7 +90,7 @@ In order to scale the features we need to do **mean normalization**
 
 ![Mean Normalization](../images/linear-regression/mean-normalization.svg)
 
-![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
 ![mu-j](../images/linear-regression/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
 

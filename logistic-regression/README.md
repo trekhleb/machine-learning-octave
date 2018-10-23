@@ -90,11 +90,11 @@ We need to simultaneously update ![Theta](../images/logistic-regression/theta-j.
 
 ![Gradient Descent](../images/logistic-regression/gradient-descent-2.svg)
 
-![alpha](../images/logistic-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+![alpha](../images/shared/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
 
-![x-i-j](../images/logistic-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![x-i](../images/logistic-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+![x-i](../images/shared/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
