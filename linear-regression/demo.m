@@ -2,7 +2,7 @@
 clear; close all; clc;
 
 % Loading training data from file ----------------------------------------------
-fprintf('Loading the training data from file...\n');
+fprintf('Loading the training data from file...\n\n');
 
 % Loading training data from file.
 data = load('house_prices.csv');
@@ -12,7 +12,7 @@ X = data(:, 1:2);
 y = data(:, 3);
 
 % Plotting training data -------------------------------------------------------
-fprintf('Plotting the training data...\n');
+fprintf('Plotting the training data...\n\n');
 
 % Create a window, position and resize it.
 figure(1, 'position', [50, 50, 850, 650]);
@@ -37,16 +37,25 @@ num_iterations = 50;
 fprintf('- Initial cost: %f\n', J_history(1));
 fprintf('- Optimized cost: %f\n', J_history(end));
 
+fprintf('- Theta (with normalization):\n');
+fprintf('-- %f\n', theta);
+fprintf('\n');
+
 % Calculate model parameters using normal equation -----------------------------
 fprintf('Calculate model parameters using normal equation...\n');
 
-[theta_normal] = normal_equation(X, y);
-normal_cost = J(X, y, theta_normal);
+X_normal = [ones(size(X, 1), 1) X];
+theta_normal = normal_equation(X_normal, y);
+normal_cost = J(X_normal, y, theta_normal);
 
 fprintf('- Normal function cost: %f\n', normal_cost);
 
+fprintf('- Theta (without normalization):\n');
+fprintf('-- %f\n', theta_normal);
+fprintf('\n');
+
 % Plotting normalized training data --------------------------------------------
-fprintf('Plotting normalized training data...\n');
+fprintf('Plotting normalized training data...\n\n');
 
 % Start drawing in second sector.
 subplot(2, 2, 2);
@@ -58,7 +67,7 @@ ylabel('Normalized Rooms');
 zlabel('Price');
 
 % Draw gradient descent progress ------------------------------------------------
-fprintf('Plot gradient descent progress...\n');
+fprintf('Plot gradient descent progress...\n\n');
 
 % Continue plotting to the right area.
 subplot(2, 2, 3);
@@ -69,7 +78,7 @@ ylabel('J(\theta)');
 title('Gradient Descent Progress');
 
 % Plotting hypothesis plane on top of training set -----------------------------
-fprintf('Plotting hypothesis plane on top of training set...\n');
+fprintf('Plotting hypothesis plane on top of training set...\n\n');
 
 % Get apartment size and rooms boundaries.
 apt_sizes = X_normalized(:, 2);
@@ -90,4 +99,5 @@ end
 subplot(2, 2, 2);
 hold on;
 mesh(apt_size_range, apt_rooms_range, apt_prices);
+legend('Training Examples', 'Hypothesis Plane')
 hold off;
