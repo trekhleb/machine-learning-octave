@@ -120,6 +120,18 @@ There is a closed-form solution to linear regression exists and it looks like th
 
 Using this formula does not require any feature scaling, and you will get an exact solution in one calculation: there is no “loop until convergence” like in gradient descent.
 
+## Regularization
+
+### Overfitting Problem**
+
+If we have too many features, the learned hypothesis may fit the **training** set very well:
+
+![overfitting](../images/shared/overfitting-1.svg)
+
+**But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
+
+![overfitting](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/t0zit.png)
+
 ## Files
 
 - [demo.m](demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
@@ -172,3 +184,4 @@ exit
 - [Gradient Descent on Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)
 - [Gradient Descent by Suryansh S.](https://hackernoon.com/gradient-descent-aynk-7cbe95a778da)
 - [Gradient Descent by Niklas Donges](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
+- [Overfitting on GeeksForGeeks](https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/)

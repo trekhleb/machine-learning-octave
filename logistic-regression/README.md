@@ -115,6 +115,18 @@ To handle these type of issues we may train a logistic regression classifier ![M
 
 ![One-vs-All](https://i.stack.imgur.com/zKpJy.jpg)
 
+## Regularization
+
+### Overfitting Problem**
+
+If we have too many features, the learned hypothesis may fit the **training** set very well:
+
+![overfitting](../images/shared/overfitting-1.svg)
+
+**But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
+
+![overfitting](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/fittings.jpg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
@@ -124,3 +136,4 @@ To handle these type of issues we may train a logistic regression classifier ![M
 - [Gradient Descent by Niklas Donges](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
 - [One vs All on Stackexchange](https://stats.stackexchange.com/questions/318520/many-binary-classifiers-vs-single-multiclass-classifier)
 - [Logistic Regression by Rohan Kapur](https://ayearofai.com/rohan-1-when-would-i-even-use-a-quadratic-equation-in-the-real-world-13f379edab3b)
+- [Overfitting on GeeksForGeeks](https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/)
