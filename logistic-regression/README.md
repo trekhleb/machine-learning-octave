@@ -14,9 +14,9 @@ In other words the dependant variable (output) for logistic regression model may
 
 ![Logistic Regression Output](../images/logistic-regression/output.svg)
 
-## Hypothesis
+## Training Set
 
-Training set:
+Training set is an input data where for every predefined set of features _x_ we have a correct classification _y_.
 
 ![Training Set](../images/logistic-regression/training-set-1.svg)
 
@@ -30,6 +30,27 @@ For convenience of notation, define:
 
 ![Logistic Regression Output](../images/logistic-regression/output.svg)
 
+## Hypothesis (the Model)
+
+The equation that gets features and parameters as an input and predicts the value as an output (i.e. predict if the email is spam or not based on some email characteristics).
+
+![Hypothesis](../images/logistic-regression/hypothesis-1.svg)
+
+Where _g()_ is a **sigmoid function**.
+
+![Sigmoid](../images/logistic-regression/sigmoid.svg)
+
+![Sigmoid](https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg)
+
+Now we my write down the hypothesis as follows:
+
+![Hypothesis](../images/logistic-regression/hypothesis-2.svg)
+
+![Predict 0](../images/logistic-regression/predict-0.svg)
+
+![Predict 1](../images/logistic-regression/predict-1.svg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
+- [Sigmoid Function on Wikipedia](https://en.wikipedia.org/wiki/Sigmoid_function)
