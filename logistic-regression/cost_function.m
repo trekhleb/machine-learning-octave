@@ -15,7 +15,7 @@ function [cost, gradients] = cost_function(X, y, theta, lambda)
     gradients = zeros(size(theta));
 
     % Calculate hypothesis.
-    predictions = hypothesis(X * theta);
+    predictions = hypothesis(X, theta);
 
     % Calculate regularization parameter.
     % Remmber that we should not regularize the parameter theta_zero.
@@ -26,7 +26,7 @@ function [cost, gradients] = cost_function(X, y, theta, lambda)
     cost = (-1 / m) * (y' * log(predictions) + (1 - y)' * log(1 - predictions)) + regularization_param;
 
     % Calculate gradient steps.
-    gradients = (1 / m) * (X' * (h - y)) + (lambda / m) * theta;
+    gradients = (1 / m) * (X' * (predictions - y)) + (lambda / m) * theta;
     % We should not regularize the parameter theta_zero.
-    gradients(1) = (1 / m) * (X(:, 1)' * (h - y));
+    gradients(1) = (1 / m) * (X(:, 1)' * (predictions - y));
 end
