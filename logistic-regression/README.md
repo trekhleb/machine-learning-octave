@@ -14,6 +14,10 @@ In other words the dependant variable (output) for logistic regression model may
 
 ![Logistic Regression Output](../images/logistic-regression/output.svg)
 
+![Logistic Regression](https://cdn-images-1.medium.com/max/1600/1*4G0gsu92rPhN-co9pv1P5A@2x.png)
+
+![Logistic Regression](https://cdn-images-1.medium.com/max/1200/1*KRhpHnucyX9Y5PMdjGvVFA.png)
+
 ## Training Set
 
 Training set is an input data where for every predefined set of features _x_ we have a correct classification _y_.
@@ -119,3 +123,4 @@ To handle these type of issues we may train a logistic regression classifier ![M
 - [Gradient Descent by Suryansh S.](https://hackernoon.com/gradient-descent-aynk-7cbe95a778da)
 - [Gradient Descent by Niklas Donges](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
 - [One vs All on Stackexchange](https://stats.stackexchange.com/questions/318520/many-binary-classifiers-vs-single-multiclass-classifier)
+- [Logistic Regression by Rohan Kapur](https://ayearofai.com/rohan-1-when-would-i-even-use-a-quadratic-equation-in-the-real-world-13f379edab3b)
