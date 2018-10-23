@@ -50,6 +50,18 @@ Now we my write down the hypothesis as follows:
 
 ![Predict 1](../images/logistic-regression/predict-1.svg)
 
+## Cost Function
+
+Function that shows how accurate the predictions of the hypothesis are with current set of parameters.
+
+![Cost Function](../images/logistic-regression/cost-function-1.svg)
+
+![Cost Function](../images/logistic-regression/cost-function-4.svg)
+
+![Cost Function](../images/logistic-regression/cost-function-2.svg)
+
+![Cost Function](../images/logistic-regression/cost-function-3.svg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
