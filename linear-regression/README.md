@@ -121,6 +121,51 @@ There is a closed-form solution to linear regression exists and it looks like th
 
 Using this formula does not require any feature scaling, and you will get an exact solution in one calculation: there is no “loop until convergence” like in gradient descent.
 
+## Files
+
+- [demo.m](./demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
+- [linear_regression.m](./linear_regression.m) - linear regression algorithm.
+- [h.m](./h.m) - linear regression hypothesis function.
+- [J.m](./J.m) - linear regression cost function.
+- [feature_normalize.m](./feature_normalize.m) - function that normalizes features.
+- [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.
+- [house_prices.csv](./house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
+- [normal_equation.m](./normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
+
+## How to Run a Demo
+
+Demo script will plot the training set data, hypothesis plane and gradient descent progress (the change of the cost function on each descent iteration).
+
+In order to run the demo you should move to `linear-regression` folder:
+
+```bash
+cd linear-regression
+```
+
+Launch Octave console:
+
+```bash
+octave
+```
+
+Launch demo script from Octave console:
+
+```bash
+demo
+```
+
+To see all demo variables you may launch:
+
+```bash
+whos
+```
+
+To exit the demo you may launch:
+
+```bash
+exit
+```
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
