@@ -58,10 +58,9 @@ Once we decided what direction we need to go we need to decide what the size of 
 
 ![Gradient Descent](https://cdn-images-1.medium.com/max/1600/0*QwE8M4MupSdqA3M4.png)
 
-We need to simultaneously update ![Theta](../images/linear-regression/theta-j.svg) for _j = 0, 1, ..., n_ 
+We need to simultaneously update ![Theta](../images/linear-regression/theta-j.svg) for _j = 0, 1, ..., n_
 
 ![Gradient Descent](../images/linear-regression/gradient-descent-1.svg)
-
 
 ![Gradient Descent](../images/linear-regression/gradient-descent-2.svg)
 

@@ -60,7 +60,45 @@ Function that shows how accurate the predictions of the hypothesis are with curr
 
 ![Cost Function](../images/logistic-regression/cost-function-2.svg)
 
+Cost function may be simplified to the following one-liner:
+
 ![Cost Function](../images/logistic-regression/cost-function-3.svg)
+
+## Batch Gradient Descent
+
+Gradient descent is an iterative optimization algorithm for finding the minimum of a cost function described above. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.
+
+Picture below illustrates the steps we take going down of the hill to find local minimum.
+
+![Gradient Descent](https://cdn-images-1.medium.com/max/1600/1*f9a162GhpMbiTVTAua_lLQ.png)
+
+The direction of the step is defined by derivative of the cost function in current point.
+
+![Gradient Descent](https://cdn-images-1.medium.com/max/1600/0*rBQI7uBhBKE8KT-X.png)
+
+Once we decided what direction we need to go we need to decide what the size of the step we need to take.
+
+![Gradient Descent](https://cdn-images-1.medium.com/max/1600/0*QwE8M4MupSdqA3M4.png)
+
+We need to simultaneously update ![Theta](../images/logistic-regression/theta-j.svg) for _j = 0, 1, ..., n_
+
+![Gradient Descent](../images/logistic-regression/gradient-descent-1.svg)
+
+![Gradient Descent](../images/logistic-regression/gradient-descent-2.svg)
+
+![alpha](../images/logistic-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+
+![x-i-j](../images/logistic-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+
+![x-i](../images/logistic-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+
+_y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
+
+_m_ - number of training examples
+
+_n_ - number of features
+
+> When we use term "batch" for gradient descent it means that each step of gradient descent uses **all** the training examples (as you might see from the formula above).
 
 ## References
 
