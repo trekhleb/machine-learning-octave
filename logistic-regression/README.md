@@ -144,6 +144,8 @@ Regularization works by adding regularization parameter to the **cost function**
 
 ![regularization parameter](../images/shared/lambda.svg) - regularization parameter
 
+> Note that you should not regularize the parameter ![theta zero](../images/shared/theta-0.svg).
+
 In this case the **gradient descent** formula will look like the following:
 
 ![Gradient Descent](../images/logistic-regression/gradient-descent-3.svg)

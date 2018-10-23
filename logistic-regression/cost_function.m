@@ -12,13 +12,13 @@ function [J, grad] = cost_function(X, y, theta, lambda)
     % Calculate hypothesis.
     predictions = hypothesis(X * theta);
 
-    % Calculate cost function.
-    left = y' * log(predictions);
-    right = (1 - y)' * log(1 - predictions);
-    theta_cut = theta(2:end, 1);  % we should not regularize the parameter theta_zero
+    % Calculate regularization parameter.
+    % Remmber that we should not regularize the parameter theta_zero.
+    theta_cut = theta(2:end, 1);
+    regularized_param = (lambda / (2 * m)) * (theta_cut' * theta_cut);
     
-    regularized_param = (lambda / (2 * m)) * (theta_cut' * theta_cut);  % sum of thetas squares
-    J = (-1 / m) * (left + right) + regularized_param;
+    % Calculate cost function.
+    J = (-1 / m) * (y' * log(predictions) + (1 - y)' * log(1 - predictions)) + regularized_param;
 
     % Calculate gradient steps.
     regularized_grad_param = (lambda / m) * theta;
