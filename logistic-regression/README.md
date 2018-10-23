@@ -140,7 +140,7 @@ Here are couple of options that may be addressed:
 
 Regularization works by adding regularization parameter to the **cost function**:
 
-![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
+![Cost Function](../images/logistic-regression/cost-function-with-regularization.svg)
 
 ![regularization parameter](../images/shared/lambda.svg) - regularization parameter
 
