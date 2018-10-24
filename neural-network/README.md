@@ -14,6 +14,18 @@ In common ANN implementations, the signal at a connection between artificial neu
 
 ![Neural Network](https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg)
 
+## Neuron Model: Logistic Unit
+
+![neuron](../images/neural-network/neuron.png)
+
+![x-0](../images/neural-network/x-0.svg)
+
+![neuron x](../images/neural-network/neuron-x.svg)
+
+Weights:
+
+![neuron weights](../images/neural-network/neuron-weights.svg)
+
 ## Cost Function
 
 ## Backpropagation Algorithm
@@ -27,6 +39,7 @@ In common ANN implementations, the signal at a connection between artificial neu
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
+- [But what is a Neural Network? By 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk)
 - [Neural Network on Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network)
 - [TensorFlow Neural Network Playground](https://playground.tensorflow.org/)
 - [Deep Learning by Carnegie Mellon University](https://insights.sei.cmu.edu/sei_blog/2018/02/deep-learning-going-deeper-toward-meaningful-patterns-in-complex-data.html)
