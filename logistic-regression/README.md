@@ -182,6 +182,19 @@ To exit the demo you may launch:
 exit
 ```
 
+## Files
+
+- [demo.m](demo.m) - logistic regression demo script that loads test data and plots decision predictions.
+- [logistic_regression.m](logistic_regression.m) - logistic regression algorithm.
+- [hypothesis.m](./hypothesis.m) - logistic regression hypothesis function.
+- [cost_function.m](./cost_function.m) - logistic regression cost function.
+- [gradient_descent.m](gradient_descent.m) - function that performs gradient descent.
+- [gradient_step.m](gradient_step.m) - function that performs just one gradient descent step.
+- [gradient_callback.m](gradient_callback.m) - function that aggregates gradient step and cost function values for `fminunc`.
+- [microchips_tests.csv](microchips_tests.csv) - training data set of microchip parameters and their validity.
+- [add_polynomial_features.m](add_polynomial_features.m) - function that generates new polynomial features for training set in order to make decision boundaries to have complex form.
+- [sigmoid.m](sigmoid.m) - sigmoid function.
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
