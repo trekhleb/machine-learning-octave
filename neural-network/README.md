@@ -26,7 +26,7 @@ Weights:
 
 ![neuron weights](../images/neural-network/neuron-weights.svg)
 
-## Neural Network
+## Network Model
 
 ## Cost Function
 
