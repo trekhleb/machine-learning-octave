@@ -25,15 +25,7 @@ function [theta, J_history] = gradient_descent(X, y, theta, alpha, num_iteration
 
     for iteration = 1:num_iterations
         % Perform a single gradient step on the parameter vector theta.
-
-        % Predictions of hypothesis on all m examples.
-        [predictions] = hypothesis(X, theta);
-
-        % The difference between predictions and actual values for all m examples.
-        difference = predictions - y;
-
-        % Vectorized version of gradient descent.
-        theta = theta - alpha * (1 / m) * (difference' * X)';
+        theta = gradient_step(X, y, theta, alpha);
 
         % Save the cost J in every iteration.  
         J_history(iteration) = cost_function(X, y, theta);
