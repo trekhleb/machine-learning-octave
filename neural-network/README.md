@@ -26,6 +26,8 @@ Weights:
 
 ![neuron weights](../images/neural-network/neuron-weights.svg)
 
+## Neural Network
+
 ## Cost Function
 
 ## Backpropagation Algorithm
