@@ -30,9 +30,12 @@ zlabel('Price');
 % Running linear regression ----------------------------------------------------
 fprintf('Running linear regression...\n');
 
+% Setup regularization parameter.
+lambda = 0;
+
 alpha = 0.1;
 num_iterations = 50;
-[theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, num_iterations);
+[theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, lambda, num_iterations);
 
 fprintf('- Initial cost: %f\n', J_history(1));
 fprintf('- Optimized cost: %f\n', J_history(end));
@@ -46,7 +49,7 @@ fprintf('Calculate model parameters using normal equation...\n');
 
 X_normal = [ones(size(X, 1), 1) X];
 theta_normal = normal_equation(X_normal, y);
-normal_cost = cost_function(X_normal, y, theta_normal);
+normal_cost = cost_function(X_normal, y, theta_normal, lambda);
 
 fprintf('- Normal function cost: %f\n', normal_cost);
 

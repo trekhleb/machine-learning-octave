@@ -15,9 +15,12 @@ function [gradients] = gradient_step(X, y, theta, lambda)
     % Calculate hypothesis.
     predictions = hypothesis(X, theta);
 
+    % Calculate regularization parameter.
+    regularization_param = (lambda / m) * theta;
+
     % Calculate gradient steps.
-    gradients = (1 / m) * (X' * (predictions - y)) + (lambda / m) * theta;
+    gradients = (1 / m) * (X' * (predictions - y)) + regularization_param;
     
-    % We should not regularize the parameter theta_zero.
+    % We should NOT regularize the parameter theta_zero.
     gradients(1) = (1 / m) * (X(:, 1)' * (predictions - y));
 end

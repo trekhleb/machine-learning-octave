@@ -1,12 +1,13 @@
 % GRADIENT DESCENT function.
 % It calculates what steps (deltas) should be taken for each theta parameter in
 % order to minimize the cost function.
-function [theta, J_history] = gradient_descent(X, y, theta, alpha, num_iterations)
+function [theta, J_history] = gradient_descent(X, y, theta, alpha, lambda, num_iterations)
     % Input:
     % X - training set of features - (m x n) matrix.
     % y - a vector of expected output values - (m x 1) vector.
     % theta - current model parameters - (n x 1) vector.
     % alpha - learning rate, the size of gradient step we need to take on each iteration.
+    % lambda - regularization parameter.
     % numb_iterations - number of iterations we will take for gradient descent.
     % 
     % Output:
@@ -25,9 +26,9 @@ function [theta, J_history] = gradient_descent(X, y, theta, alpha, num_iteration
 
     for iteration = 1:num_iterations
         % Perform a single gradient step on the parameter vector theta.
-        theta = gradient_step(X, y, theta, alpha);
+        theta = gradient_step(X, y, theta, alpha, lambda);
 
         % Save the cost J in every iteration.  
-        J_history(iteration) = cost_function(X, y, theta);
+        J_history(iteration) = cost_function(X, y, theta, lambda);
     end
 end
