@@ -32,7 +32,19 @@ Weights:
 
 ![a-i-j](../images/neural-network/a-i-j.svg) - "activation" of unit _i_ in layer _j_.
 
-![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg). 
+![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg).
+
+Then we're able to calculations activations for second layer:
+
+![a-1-2](../images/neural-network/a-1-2.svg)
+
+![a-2-2](../images/neural-network/a-2-2.svg)
+
+![a-3-2](../images/neural-network/a-3-2.svg)
+
+The output layer activation will be calculated based on the previous layer activations:
+
+![h-Theta-example](../images/neural-network/h-Theta-example.svg)
 
 ## Cost Function
 
