@@ -16,7 +16,7 @@ In common ANN implementations, the signal at a connection between artificial neu
 
 ## Neuron Model: Logistic Unit
 
-![neuron](../images/neural-network/neuron.png)
+![neuron](../images/neural-network/neuron.drawio.svg)
 
 ![x-0](../images/neural-network/x-0.svg)
 
