@@ -46,6 +46,10 @@ The output layer activation will be calculated based on the previous layer activ
 
 ![h-Theta-example](../images/neural-network/h-Theta-example.svg)
 
+Where:
+
+![sigmoid](../images/neural-network/sigmoid.svg)
+
 ## Cost Function
 
 ## Backpropagation Algorithm
