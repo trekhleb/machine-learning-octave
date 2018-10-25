@@ -54,7 +54,7 @@ Where _g()_ function may be a sigmoid:
 
 ![sigmoid](../images/neural-network/sigmoid.svg)
 
-![Sigmoid](../images/logistic-regression/sigmoid.svg)
+![Sigmoid](https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg)
 
 ### Vectorized Implementation of Forward Propagation
 
