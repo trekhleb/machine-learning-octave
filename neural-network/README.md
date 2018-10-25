@@ -77,6 +77,14 @@ To simplify previous activation equations let's introduce a _z_ variable:
 
 ![h-Theta-vectorized](../images/neural-network/h-Theta-vectorized.svg)
 
+## Multi-class Classification
+
+In order to make neural network to work with multi-class notification we may use **One-vs-All** approach.
+
+![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
+
+![h-Theta-multi-class](../images/neural-network/multi-class-h.svg)
+
 ## Cost Function
 
 ## Backpropagation Algorithm
