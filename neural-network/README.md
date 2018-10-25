@@ -28,6 +28,8 @@ Weights:
 
 ## Forward Propagation
 
+Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
+
 Let's take a look at simple example model with one hidden layer.
 
 ![network model](../images/neural-network/neuron-network.drawio.svg)
@@ -68,11 +70,12 @@ To simplify previous activation equations let's introduce a _z_ variable:
 
 ![z-matrix](../images/neural-network/z-matrix.svg)
 
+> Don't forget to add bias units (activations) before propagating to the next layer.
+> ![a-bias](../images/neural-network/a-bias.svg)
+
 ![z-3-vectorize](../images/neural-network/z-3-vectorized.svg)
 
 ![h-Theta-vectorized](../images/neural-network/h-Theta-vectorized.svg)
-
-h-Theta-vectorized.svg
 
 ## Cost Function
 
