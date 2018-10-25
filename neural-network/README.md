@@ -30,6 +30,10 @@ Weights:
 
 ![network model](../images/neural-network/neuron-network.drawio.svg)
 
+![a-i-j](../images/neural-network/a-i-j.svg) - "activation" of unit _i_ in layer _j_.
+
+![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg). 
+
 ## Cost Function
 
 ## Backpropagation Algorithm
