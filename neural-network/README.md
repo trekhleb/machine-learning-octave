@@ -58,7 +58,7 @@ Now let's convert previous calculations into more concise vectorized form.
 
 ![neuron x](../images/neural-network/neuron-x.svg)
 
-Let's introduce a _z_ variable:
+To simplify previous activation equations let's introduce a _z_ variable:
 
 ![z-1](../images/neural-network/z-1.svg)
 
@@ -66,7 +66,13 @@ Let's introduce a _z_ variable:
 
 ![z-3](../images/neural-network/z-3.svg)
 
+![z-matrix](../images/neural-network/z-matrix.svg)
 
+![z-3-vectorize](../images/neural-network/z-3-vectorized.svg)
+
+![h-Theta-vectorized](../images/neural-network/h-Theta-vectorized.svg)
+
+h-Theta-vectorized.svg
 
 ## Cost Function
 
