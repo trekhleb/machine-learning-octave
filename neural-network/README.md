@@ -54,6 +54,8 @@ Where _g()_ function may be a sigmoid:
 
 ![sigmoid](../images/neural-network/sigmoid.svg)
 
+![Sigmoid](../images/logistic-regression/sigmoid.svg)
+
 ### Vectorized Implementation of Forward Propagation
 
 Now let's convert previous calculations into more concise vectorized form.
