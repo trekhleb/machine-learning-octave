@@ -28,6 +28,8 @@ Weights:
 
 ## Network Model
 
+![network model](../images/neural-network/neuron-network.drawio.svg)
+
 ## Cost Function
 
 ## Backpropagation Algorithm
