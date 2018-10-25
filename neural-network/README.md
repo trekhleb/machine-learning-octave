@@ -54,7 +54,7 @@ Where _g()_ function may be a sigmoid:
 
 ![sigmoid](../images/neural-network/sigmoid.svg)
 
-## Forward Propagation: Vectorized Implementation
+### Vectorized Implementation of Forward Propagation
 
 Now let's convert previous calculations into more concise vectorized form.
 
@@ -81,9 +81,21 @@ To simplify previous activation equations let's introduce a _z_ variable:
 
 In order to make neural network to work with multi-class notification we may use **One-vs-All** approach.
 
+Let's say we want our network to distinguish if there is a _pedestrian_ or _car_ of _motorcycle_ or _truck_ is on the image.
+
+In this case the output layer of our network will have 4 units (input layer will be much bigger and it will have all the pixel from the image. Let's say if all our images will be 20x20 pixels then the input layer will have 400 units each of which will contain the black-white color of the corresponding picture).
+
 ![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
 
 ![h-Theta-multi-class](../images/neural-network/multi-class-h.svg)
+
+In this case we would expect our final hypothesis to have following values:
+
+![h-pedestrian](../images/neural-network/h-pedestrian.svg)
+
+![h-car](../images/neural-network/h-car.svg)
+
+![h-motorcycle](../images/neural-network/h-motorcycle.svg)
 
 ## Cost Function
 
