@@ -26,7 +26,9 @@ Weights:
 
 ![neuron weights](../images/neural-network/neuron-weights.svg)
 
-## Network Model
+## Forward Propagation
+
+Let's take a look at simple example model with one hidden layer.
 
 ![network model](../images/neural-network/neuron-network.drawio.svg)
 
@@ -34,7 +36,7 @@ Weights:
 
 ![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg).
 
-Then we're able to calculations activations for second layer:
+Then we're able to calculations activations for second layer based on the input layer and our network parameters:
 
 ![a-1-2](../images/neural-network/a-1-2.svg)
 
@@ -42,13 +44,29 @@ Then we're able to calculations activations for second layer:
 
 ![a-3-2](../images/neural-network/a-3-2.svg)
 
-The output layer activation will be calculated based on the previous layer activations:
+The output layer activation will be calculated based on the hidden layer activations:
 
 ![h-Theta-example](../images/neural-network/h-Theta-example.svg)
 
-Where:
+Where _g()_ function may be a sigmoid:
 
 ![sigmoid](../images/neural-network/sigmoid.svg)
+
+## Forward Propagation: Vectorized Implementation
+
+Now let's convert previous calculations into more concise vectorized form.
+
+![neuron x](../images/neural-network/neuron-x.svg)
+
+Let's introduce a _z_ variable:
+
+![z-1](../images/neural-network/z-1.svg)
+
+![z-2](../images/neural-network/z-2.svg)
+
+![z-3](../images/neural-network/z-3.svg)
+
+
 
 ## Cost Function
 
