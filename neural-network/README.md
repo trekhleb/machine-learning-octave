@@ -97,6 +97,14 @@ In this case we would expect our final hypothesis to have following values:
 
 ![h-motorcycle](../images/neural-network/h-motorcycle.svg)
 
+In this case for the training set:
+
+![training-set](../images/neural-network/training-set.svg)
+
+We would have:
+
+![y-i-multi](../images/neural-network/y-i-multi.svg)
+
 ## Cost Function
 
 ## Backpropagation Algorithm
