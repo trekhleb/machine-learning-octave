@@ -131,6 +131,10 @@ We would have:
 
 ## Cost Function
 
+The cost function for the neuron network is quite similar to the logistic regression cost function.
+
+![cost-function](../images/neural-network/cost-function.svg)
+
 ## Backpropagation Algorithm
 
 ## Gradient Checking
