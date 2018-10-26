@@ -135,6 +135,10 @@ The cost function for the neuron network is quite similar to the logistic regres
 
 ![cost-function](../images/neural-network/cost-function.svg)
 
+![h-Theta](../images/neural-network/h-Theta.svg)
+
+![h-Theta-i](../images/neural-network/h-Theta-i.svg)
+
 ## Backpropagation Algorithm
 
 ## Gradient Checking
