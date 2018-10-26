@@ -79,6 +79,16 @@ To simplify previous activation equations let's introduce a _z_ variable:
 
 ![h-Theta-vectorized](../images/neural-network/h-Theta-vectorized.svg)
 
+### Forward Propagation Example
+
+Let's take the following network architecture with 4 layers (input layer, 2 hidden layers and output layer) as an example:
+
+![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
+
+In this case the forward propagation steps would look like the following:
+
+![forward-propagation-example](../images/neural-network/forward-propagation-example.svg)
+
 ## Multi-class Classification
 
 In order to make neural network to work with multi-class notification we may use **One-vs-All** approach.
