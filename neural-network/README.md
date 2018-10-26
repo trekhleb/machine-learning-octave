@@ -179,7 +179,7 @@ We need to set:
 
 ![Delta](../images/neural-network/Delta.svg)
 
-![backpropagation](backpropagation.svg)
+![backpropagation](../images/neural-network/backpropagation.svg)
 
 ## Gradient Checking
 
