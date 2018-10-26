@@ -139,7 +139,17 @@ The cost function for the neuron network is quite similar to the logistic regres
 
 ![h-Theta-i](../images/neural-network/h-Theta-i.svg)
 
-## Backpropagation Algorithm
+## Backpropagation Algorithm (Gradient Computation)
+
+Backpropagation algorithm has the same purpose as gradient descent for linear or logistic regression - it corrects the values of thetas to minimize a cost function.
+
+In other words we need to be able to calculate partial derivative of cost function for each theta.
+
+![J-partial](../images/neural-network/J-partial.svg)
+
+Let's assume that:
+
+![delta-j-l](../images/neural-network/delta-j-l.svg) - "error" of node _j_ in layer _l_.
 
 ## Gradient Checking
 
