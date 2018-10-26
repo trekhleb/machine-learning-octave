@@ -14,7 +14,9 @@ In common ANN implementations, the signal at a connection between artificial neu
 
 ![Neural Network](https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg)
 
-## Neuron Model: Logistic Unit
+## Neuron Model (Logistic Unit)
+
+Here is a model of one neuron unit.
 
 ![neuron](../images/neural-network/neuron.drawio.svg)
 
@@ -26,9 +28,9 @@ Weights:
 
 ![neuron weights](../images/neural-network/neuron-weights.svg)
 
-## Forward Propagation
+## Network Model (Set of Neurons)
 
-Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
+Neural network consists of the neuron units described in the section above.
 
 Let's take a look at simple example model with one hidden layer.
 
@@ -37,6 +39,14 @@ Let's take a look at simple example model with one hidden layer.
 ![a-i-j](../images/neural-network/a-i-j.svg) - "activation" of unit _i_ in layer _j_.
 
 ![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg).
+
+![Theta-j](../images/neural-network/L.svg) - total number of layers in network.
+
+![s-l](../images/neural-network/L.svg) - number of units (not counting bias unit) in layer _l_.
+
+## Forward Propagation
+
+Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
 
 Then we're able to calculations activations for second layer based on the input layer and our network parameters:
 
