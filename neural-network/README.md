@@ -40,9 +40,11 @@ Let's take a look at simple example model with one hidden layer.
 
 ![Theta-j](../images/neural-network/big-theta-j.svg) - matrix of weights controlling function mapping from layer _j_ to layer _j + 1_. For example for the first layer: ![Theta-1](../images/neural-network/big-theta-1.svg).
 
-![Theta-j](../images/neural-network/L.svg) - total number of layers in network.
+![Theta-j](../images/neural-network/L.svg) - total number of layers in network (3 in our example).
 
-![s-l](../images/neural-network/L.svg) - number of units (not counting bias unit) in layer _l_.
+![s-l](../images/neural-network/s-l.svg) - number of units (not counting bias unit) in layer _l_.
+
+![K](../images/neural-network/K.svg) - number of output units (1 in our example but could be any real number for multi-class classification).
 
 ## Forward Propagation
 
