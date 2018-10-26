@@ -153,6 +153,16 @@ Let's assume that:
 
 ![delta-j-l](../images/neural-network/delta-j-l.svg) - "error" of node _j_ in layer _l_.
 
+For each output unit (layer _L = 4_):
+
+![delta-4](../images/neural-network/delta-4.svg)
+
+Or in vectorized form:
+
+![delta-4-vectorized](../images/neural-network/delta-4-vectorized.svg)
+
+![delta-3-2](../images/neural-network/delta-3-2.svg)
+
 ## Gradient Checking
 
 ## Random Initialization
