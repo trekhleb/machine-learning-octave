@@ -147,6 +147,8 @@ In other words we need to be able to calculate partial derivative of cost functi
 
 ![J-partial](../images/neural-network/J-partial.svg)
 
+![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
+
 Let's assume that:
 
 ![delta-j-l](../images/neural-network/delta-j-l.svg) - "error" of node _j_ in layer _l_.
