@@ -179,6 +179,8 @@ We need to set:
 
 ![Delta](../images/neural-network/Delta.svg)
 
+![backpropagation](backpropagation.svg)
+
 ## Gradient Checking
 
 ## Random Initialization
