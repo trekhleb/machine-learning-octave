@@ -50,7 +50,7 @@ Let's take a look at simple example model with one hidden layer.
 
 Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
 
-Then we're able to calculations activations for second layer based on the input layer and our network parameters:
+For the simple network mentioned in a previous section above we're able to calculate activations for second layer based on the input layer and our network parameters:
 
 ![a-1-2](../images/neural-network/a-1-2.svg)
 
