@@ -185,6 +185,10 @@ We need to set:
 
 ## Random Initialization
 
+Before starting forward propagation we need to initialize Theta parameters. We can not assign zero to all thetas since this would make our network useless because every neuron of the layer will learn the same as its siblings. In other word we need to **break the symmetry**. In order to do so we need to initialize thetas to some small random initial values:
+
+![theta-init](../images/neural-network/theta-init.svg)
+
 ## Training a Neural Network
 
 ## References
