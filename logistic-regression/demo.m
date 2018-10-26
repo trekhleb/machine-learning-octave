@@ -1,5 +1,5 @@
 % Initialization
-clear ; close all; clc;
+clear; close all; clc;
 
 % Load the data --------------------------------------------------------
 fprintf('Loading the data...\n\n');
