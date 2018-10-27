@@ -71,32 +71,47 @@ function [J grad] = nn_cost_function(nn_params_unrolled, layers, X, y, lambda)
     J = (-1 / m) * sum(sum((y_vectors .* log(h) + (1 - y_vectors) .* log(1 - h)))) + regularization_param;
 
 
-    % % Do back propagation -----------------------------------------------------
+    % Do backpropagation -------------------------------------------------------
+    for i=1:m
+        % Setup input layer activations.
+        a = [1; X(i, :)'];
+
+        % Perform a feedforward pass for current training example.
+        for layer_number=1:(L-1)
+            layer_theta = nn_params{layer_number};
+            z = layer_theta * a;
+            a_next = [1; sigmoid(z)];
+            a = a_next;
+        end
+
+        % Remove bias units from the output activations.
+        a_output = a(2:end, :);
+
+        % Calculate deltas.
+        % For input layer we don't calculate delta because we do not associate error with the input.
+        delta = {};
+
+        % Convert the y output from number to vector (i.e. 5 to [0; 0; 0; 0; 1; 0; 0; 0; 0; 0])
+        y_vector = (1:num_labels == y(i))';
+
+        % Calculate deltas for the output layer.
+        delta{L} = a_output - y_vector;
+
+        % Calculate deltas for hidden layers.
+        for layer_number=1:(L-2)
+            % The loops should go for the layers L, L-1, ..., 2.
+            backward_layer_number = L - layer_number;
+            layer_theta = nn_params{backward_layer_number};
+            next_delta = delta{backward_layer_number + 1};
+
+            % delta{backward_layer_number} = (layer_theta' * next_delta) .* 
+        end
+    end
 
     % for t = 1:m
-    %     % Perform a feedforward pass.
-
-    %     % Input layer (l=1).
-    %     a1 = [1; X(t,:)']; % (401 x 1)
-        
-    %     % Hidden layer (l=2).
-    %     z2 = Theta1 * a1; % (25 x 401) * (401 x 1) = (25 x 1)
-    %     a2 = [1; sigmoid(z2)]; % (26 x 1)
-
-    %     % Output layer (l=3).
-    %     z3 = Theta2 * a2; % (10 x 26) * (26 x 1) = (10 x 1)
-    %     a3 = sigmoid(z3); % (10 x 1)
-
-    %     % Calculate deltas.
-
-    %     % Convert the y output from number to vector (i.e. 5 to [0; 0; 0; 0; 1; 0; 0; 0; 0; 0])
-    %     y_vector = (1:num_labels == y(t))';
-
-    %     % Calculate deltas for the output layer (l=3).
-    %     delta_3 = a3 - y_vector; % (10 x 1)
 
     %     % Calculate deltas for hidden layer (l=2).
-    %     delta_2 = (Theta2' * delta_3) .* [1; sigmoidGradient(z2)]; % (10 x 26)' * (10 x 1) .* (26 x 1) = (26 x 1)
+    %     delta_2 = (Theta2' * delta_3) .* [1; sigmoidGradient(z2)];
     %     delta_2 = delta_2(2:end); % Take off the bias row. (25 x 1)
 
     %     % delta_1 is not calculated because we do not associate error with the input.

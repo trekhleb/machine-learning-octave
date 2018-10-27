@@ -165,6 +165,10 @@ Or in vectorized form:
 
 ![delta-3-2](../images/neural-network/delta-3-2.svg)
 
+![sigmoid-gradient](../images/neural-network/sigmoid-gradient.svg) - sigmoid gradient.
+
+![sigmoid-gradient-2](../images/neural-network/sigmoid-gradient-2.svg)
+
 Now we may calculate the gradient step:
 
 ![J-partial-detailed](../images/neural-network/J-partial-detailed.svg)
