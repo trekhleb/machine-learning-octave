@@ -46,7 +46,45 @@ Let's take a look at simple example model with one hidden layer.
 
 ![K](../images/neural-network/K.svg) - number of output units (1 in our example but could be any real number for multi-class classification).
 
-## Forward Propagation
+## Multi-class Classification
+
+In order to make neural network to work with multi-class notification we may use **One-vs-All** approach.
+
+Let's say we want our network to distinguish if there is a _pedestrian_ or _car_ of _motorcycle_ or _truck_ is on the image.
+
+In this case the output layer of our network will have 4 units (input layer will be much bigger and it will have all the pixel from the image. Let's say if all our images will be 20x20 pixels then the input layer will have 400 units each of which will contain the black-white color of the corresponding picture).
+
+![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
+
+![h-Theta-multi-class](../images/neural-network/multi-class-h.svg)
+
+In this case we would expect our final hypothesis to have following values:
+
+![h-pedestrian](../images/neural-network/h-pedestrian.svg)
+
+![h-car](../images/neural-network/h-car.svg)
+
+![h-motorcycle](../images/neural-network/h-motorcycle.svg)
+
+In this case for the training set:
+
+![training-set](../images/neural-network/training-set.svg)
+
+We would have:
+
+![y-i-multi](../images/neural-network/y-i-multi.svg)
+
+## Cost Function
+
+The cost function for the neuron network is quite similar to the logistic regression cost function.
+
+![cost-function](../images/neural-network/cost-function.svg)
+
+![h-Theta](../images/neural-network/h-Theta.svg)
+
+![h-Theta-i](../images/neural-network/h-Theta-i.svg)
+
+## Forward (or Feedforward) Propagation
 
 Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
 
@@ -100,44 +138,6 @@ Let's take the following network architecture with 4 layers (input layer, 2 hidd
 In this case the forward propagation steps would look like the following:
 
 ![forward-propagation-example](../images/neural-network/forward-propagation-example.svg)
-
-## Multi-class Classification
-
-In order to make neural network to work with multi-class notification we may use **One-vs-All** approach.
-
-Let's say we want our network to distinguish if there is a _pedestrian_ or _car_ of _motorcycle_ or _truck_ is on the image.
-
-In this case the output layer of our network will have 4 units (input layer will be much bigger and it will have all the pixel from the image. Let's say if all our images will be 20x20 pixels then the input layer will have 400 units each of which will contain the black-white color of the corresponding picture).
-
-![multi-class-network](../images/neural-network/multi-class-network.drawio.svg)
-
-![h-Theta-multi-class](../images/neural-network/multi-class-h.svg)
-
-In this case we would expect our final hypothesis to have following values:
-
-![h-pedestrian](../images/neural-network/h-pedestrian.svg)
-
-![h-car](../images/neural-network/h-car.svg)
-
-![h-motorcycle](../images/neural-network/h-motorcycle.svg)
-
-In this case for the training set:
-
-![training-set](../images/neural-network/training-set.svg)
-
-We would have:
-
-![y-i-multi](../images/neural-network/y-i-multi.svg)
-
-## Cost Function
-
-The cost function for the neuron network is quite similar to the logistic regression cost function.
-
-![cost-function](../images/neural-network/cost-function.svg)
-
-![h-Theta](../images/neural-network/h-Theta.svg)
-
-![h-Theta-i](../images/neural-network/h-Theta-i.svg)
 
 ## Backpropagation
 
