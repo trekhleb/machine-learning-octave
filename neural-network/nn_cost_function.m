@@ -57,10 +57,18 @@ function [J grad] = nn_cost_function(nn_params_unrolled, layers, X, y, lambda)
         y_vectors(i, y(i)) = 1;
     end
 
-    % % Calculate regularization parameter.
-    % reg = (lambda / (2 * m)) * (sum(sum(Theta1(:, 2:end) .^ 2)) + sum(sum(Theta2(:, 2:end) .^ 2)));
+    % Calculate regularization parameter.
+    theta_square_sum = 0;
+    for layer_number=1:(L-1)
+        layer_theta = nn_params{layer_number};
+        % Don't try to regularize bias thetas.
+        theta_square_sum = theta_square_sum + sum(sum(layer_theta(:, 2:end) .^ 2));
+    end
 
-    % J = (-1 / m) * sum(sum((log(h) .* y_vectors + log(1 - h) .* (1 - y_vectors)))) + reg;
+    regularization_param = (lambda / (2 * m)) * theta_square_sum;
+
+    % Calculate the cost with regularization.
+    J = (-1 / m) * sum(sum((y_vectors .* log(h) + (1 - y_vectors) .* log(1 - h)))) + regularization_param;
 
 
     % % Do back propagation -----------------------------------------------------

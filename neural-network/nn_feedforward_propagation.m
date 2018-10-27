@@ -18,6 +18,6 @@ function h = nn_feedforward_propagation(X, y, nn_params, layers)
         a = a_next;
     end
 
-    % Output layer.
-    h = a;
+    % Output layer should not contain bias units.
+    h = a(:, 2:end);
 end
