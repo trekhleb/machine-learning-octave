@@ -6,7 +6,7 @@ function nn_params_rolled = nn_params_roll(nn_params_unrolled, layers)
     nn_params_rolled = {};
     unrolled_shift = 0;
 
-    for layer_number=1:2
+    for layer_number=1:(L-1)
         L_in = layers(layer_number);
         L_out = layers(layer_number + 1);
 
