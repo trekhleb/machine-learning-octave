@@ -74,16 +74,6 @@ We would have:
 
 ![y-i-multi](../images/neural-network/y-i-multi.svg)
 
-## Cost Function
-
-The cost function for the neuron network is quite similar to the logistic regression cost function.
-
-![cost-function](../images/neural-network/cost-function.svg)
-
-![h-Theta](../images/neural-network/h-Theta.svg)
-
-![h-Theta-i](../images/neural-network/h-Theta-i.svg)
-
 ## Forward (or Feedforward) Propagation
 
 Forward propagation is an interactive process of calculating activations for each layer starting from the input layer and going to the output layer.
@@ -138,6 +128,16 @@ Let's take the following network architecture with 4 layers (input layer, 2 hidd
 In this case the forward propagation steps would look like the following:
 
 ![forward-propagation-example](../images/neural-network/forward-propagation-example.svg)
+
+## Cost Function
+
+The cost function for the neuron network is quite similar to the logistic regression cost function.
+
+![cost-function](../images/neural-network/cost-function.svg)
+
+![h-Theta](../images/neural-network/h-Theta.svg)
+
+![h-Theta-i](../images/neural-network/h-Theta-i.svg)
 
 ## Backpropagation
 
