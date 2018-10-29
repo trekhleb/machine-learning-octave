@@ -1,3 +1,5 @@
+% PART 1: Microchips classification ====================================
+
 % Initialization
 clear; close all; clc;
 
@@ -86,3 +88,36 @@ x = [ones(size(x, 1), 1), x];
 
 probabilities = hypothesis(x, theta);
 fprintf(' %f \n', probabilities);
+
+fprintf('\nProgram paused. Press enter to train logistic regression to recognize digits.\n');
+pause;
+
+% PART 2: Handwritten digits classification ==============================
+clear; close all; clc;
+
+% Load training data
+fprintf('Loading training data...\n');
+load('digits.mat');
+
+% Plotting some training example ----------------------------------------------------
+fprintf('Visualizing data...\n');
+
+% Randomly select 100 data points to display
+random_digits_indices = randperm(size(X, 1));
+random_digits_indices = random_digits_indices(1:100);
+
+display_data(X(random_digits_indices, :));
+
+% Setup the parameters you will use for this part of the exercise
+input_layer_size = 400;  % 20x20 input images of digits.
+num_labels = 10; % 10 labels, from 1 to 10 (note that we have mapped "0" to label 10).
+
+fprintf('Training One-vs-All Logistic Regression...\n')
+lambda = 0.01;
+num_iterations = 50;
+[all_theta] = one_vs_all(X, y, num_labels, lambda, num_iterations);
+
+fprintf('Predict for One-Vs-All...\n')
+pred = one_vs_all_predict(all_theta, X);
+
+fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
