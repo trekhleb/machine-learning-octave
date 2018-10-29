@@ -32,8 +32,8 @@ epsilon = 0.12;
 nn_params = nn_params_init(layers, epsilon);
 
 % Unroll parameters matrix into vector.
-nn_params_unrolled = nn_params_unroll(nn_params);
+nn_params_unrolled = unroll(nn_params);
 
 % Setup regularization parameter.
-lambda = 0;
-nn_cost_function(nn_params_unrolled, layers, X, y, lambda);
+lambda = 1;
+nn_gradient_step(nn_params_unrolled, layers, X, y, lambda);
