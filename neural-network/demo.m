@@ -16,6 +16,20 @@ random_digits_indices = random_digits_indices(1:100);
 
 display_data(X(random_digits_indices, :));
 
+% Debug neural network --------------------------------------------------------------
+
+% Check gradients with lambda = 0.
+% lambda = 0;
+% debug_nn_gradients(lambda);
+% fprintf('\nProgram paused. Press enter to continue.\n');
+% pause;
+
+% Check gradients with lambda = 3.
+% lambda = 3;
+% debug_nn_gradients(lambda);
+% fprintf('\nProgram paused. Press enter to continue.\n');
+% pause;
+
 % Initializing neural network parameters --------------------------------------------
 fprintf('Initializing neural network parameters...\n');
 
@@ -31,12 +45,12 @@ layers = [
 epsilon = 0.12;
 
 % Regularization parameter.
-lambda = 1; 
+lambda = 0; 
 
 % Number of iterations to perform for gradient descent.
 max_iterations = 50;
 
-% number_of_examples = 50;
+% number_of_examples = 10;
 % X = X(1:number_of_examples, :);
 % y = y(1:number_of_examples, :);
 
