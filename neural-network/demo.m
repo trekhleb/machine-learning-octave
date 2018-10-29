@@ -37,7 +37,7 @@ fprintf('Initializing neural network parameters...\n');
 layers = [
     400,    % Input layer - 20x20 Input images of digits.
     25,     % First hidden layer - 25 hidden units.
- %  10,     % Second hidden layer - 10 hidden units.
+%   15,     % Second hidden layer - 10 hidden units.
     10      % Output layer - 10 labels, from 1 to 10 (note that we have mapped "0" to label 10).
 ];
 
