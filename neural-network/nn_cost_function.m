@@ -11,7 +11,7 @@ function J = nn_cost_function(nn_params, layers, X, y, lambda)
     num_labels = layers(end);
 
     % Feedforward the neural network
-    h = nn_feedforward_propagation(X, y, nn_params, layers);
+    h = nn_feedforward_propagation(X, nn_params, layers);
 
     % Compute the cost.
 

@@ -1,5 +1,5 @@
 % FEEDFORWARD PROPAGATION of the neural network.
-function h = nn_feedforward_propagation(X, y, nn_params, layers)
+function h = nn_feedforward_propagation(X, nn_params, layers)
     % Calculate the total number of layers.
     L = length(layers);
 
