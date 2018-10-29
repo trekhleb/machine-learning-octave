@@ -157,15 +157,15 @@ In this case the **gradient descent** formula will look like the following:
 
 ## Files
 
-- [demo.m](demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
-- [linear_regression.m](linear_regression.m) - linear regression algorithm.
+- [demo.m](./demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
+- [linear_regression.m](./linear_regression.m) - linear regression algorithm.
 - [hypothesis.m](./hypothesis.m) - linear regression hypothesis function.
 - [cost_function.m](./cost_function.m) - linear regression cost function.
-- [feature_normalize.m](feature_normalize.m) - function that normalizes features.
-- [gradient_descent.m](gradient_descent.m) - function that performs gradient descent.
-- [gradient_step.m](gradient_step.m) - function that performs just one gradient descent step.
-- [house_prices.csv](house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
-- [normal_equation.m](normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
+- [feature_normalize.m](./feature_normalize.m) - function that normalizes features.
+- [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.
+- [gradient_step.m](./gradient_step.m) - function that performs just one gradient descent step.
+- [house_prices.csv](./house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
+- [normal_equation.m](./normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
 
 ## How to Run a Demo
 
