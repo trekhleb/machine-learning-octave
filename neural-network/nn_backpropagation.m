@@ -76,7 +76,7 @@ function gradients = nn_backpropagation(nn_params, layers, X, y, lambda)
     regularization_params = {};
     for layer_number=1:(L-1)
         current_Delta = Delta{layer_number};
-        regularization_params{layer_number} = lambda * [zeros(size(current_Delta, 1), 1) current_Delta(:, 2:end)];
+        regularization_params{layer_number} = (lambda / m) * [zeros(size(current_Delta, 1), 1) current_Delta(:, 2:end)];
     end
 
     for layer_number=1:(L-1)

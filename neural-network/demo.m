@@ -45,14 +45,10 @@ layers = [
 epsilon = 0.12;
 
 % Regularization parameter.
-lambda = 0; 
+lambda = 0.01;
 
 % Number of iterations to perform for gradient descent.
 max_iterations = 50;
-
-% number_of_examples = 10;
-% X = X(1:number_of_examples, :);
-% y = y(1:number_of_examples, :);
 
 % Train neural network.
 [nn_params, cost] = neural_network(X, y, layers, lambda, epsilon, max_iterations);
