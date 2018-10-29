@@ -14,4 +14,5 @@ Real value prediction.
 
 - [Logistic Regression](logistic-regression)
 - [Neural Network](neural-network) (NN)
-- 
+
+## Unsupervised Learning
