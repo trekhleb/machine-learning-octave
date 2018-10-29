@@ -4,5 +4,14 @@
 
 Given the "right answer" for example in the data, predict real-valued output. Predictive analysis.
 
-- [Linear Regression](linear-regression) (real value prediction)
-- [Logistic Regression](logistic-regression) (classification)
+### Regression
+
+Real value prediction.
+
+- [Linear Regression](linear-regression)
+
+### Classification
+
+- [Logistic Regression](logistic-regression)
+- [Neural Network](neural-network) (NN)
+- 
