@@ -30,13 +30,23 @@ Another illustration of k-means convergence:
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif)
 
-![Clustering](https://upload.wikimedia.org/wikipedia/commons/d/d1/KMeans-density-data.svg)
-
 ## K-means Optimization Objective
 
 ![c-i](./formulas/c-i.svg) - index of cluster _(1, 2, ..., K)_ to which example _x<sup>(i)</sup>_ is currently assigned.
 
-![mu-k](./formulas/mu-k.svg) - cluster centroid _k_ (![mu-k-2](./formulas/mu-k-2.svg)) and ![k](./formulas/k.svg)
+![mu-k](./formulas/mu-k.svg) - cluster centroid _k_ (![mu-k-2](./formulas/mu-k-2.svg)) and ![k](./formulas/k.svg).
+
+![mu-c-i](./formulas/mu-c-i.svg) - cluster centroid of a cluster to which the example _x<sup>(i)</sup>_ has been assigned.
+
+For example:
+
+![Cluster example](./formulas/cluster-example.svg)
+
+In this case optimization objective will look like the following:
+
+![Cost Function](./formulas/cost-function.svg)
+
+![Clustering](https://upload.wikimedia.org/wikipedia/commons/d/d1/KMeans-density-data.svg)
 
 ## References
 
