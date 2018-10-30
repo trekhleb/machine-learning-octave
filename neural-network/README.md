@@ -191,38 +191,6 @@ Before starting forward propagation we need to initialize Theta parameters. We c
 
 ![theta-init](./formulas/theta-init.svg)
 
-## How to Run a Demo
-
-In order to run the demo you should move to `neural-network` folder:
-
-```bash
-cd neural-network
-```
-
-Launch Octave console:
-
-```bash
-octave
-```
-
-Launch demo script from Octave console:
-
-```bash
-demo
-```
-
-To see all demo variables you may launch:
-
-```bash
-whos
-```
-
-To exit the demo you may launch:
-
-```bash
-exit
-```
-
 ## Files
 
 - [demo.m](./demo.m) - demo file that you should run to launch neural network training and to see how the network will recognize handwritten digits.
