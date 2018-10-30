@@ -1,5 +1,6 @@
 # Anomaly Detection Using Gaussian Distribution
 
+![Gaussian Distribution](https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg)
 
 ## References
 
