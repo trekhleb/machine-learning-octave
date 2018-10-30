@@ -17,8 +17,8 @@ function pred = svm_predict(model, X)
         % linear kernel
         p = X * model.w + model.b;
     elseif strfind(func2str(model.kernelFunction), 'kernel_gaussian')
-        % Vectorized RBF Kernel
-        % This is equivalent to computing the kernel on every pair of examples
+        % Vectorized RBF Kernel.
+        % This is equivalent to computing the kernel on every pair of examples.
         X1 = sum(X.^2, 2);
         X2 = sum(model.X.^2, 2)';
         K = bsxfun(@plus, X1, bsxfun(@plus, X2, - 2 * X * model.X'));

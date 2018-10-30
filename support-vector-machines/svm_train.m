@@ -19,8 +19,6 @@ function [model] = svm_train(X, Y, C, kernelFunction, tolerance, max_passes)
     %
     %           LIBSVM   (http://www.csie.ntu.edu.tw/~cjlin/libsvm/)
     %           SVMLight (http://svmlight.joachims.org/)
-    %
-    %
 
     % Data parameters
     m = size(X, 1);
