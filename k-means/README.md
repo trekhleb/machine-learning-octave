@@ -20,15 +20,17 @@ Where each observation is a _d_-dimensional real vector, k-means clustering aims
 
 ... so as to minimize the within-cluster sum of squares (i.e. variance).
 
-Below you may find an example of random cluster centroids initialization and further clusters convergence:
+Below you may find an example of 4 random cluster centroids initialization and further clusters convergence:
 
 ![Clustering](http://shabal.in/visuals/kmeans/random.gif)
 
 [Picture Source](http://shabal.in/visuals/kmeans/6.html)
 
-Convergence of k-means:
+Another illustration of k-means convergence:
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif)
+
+![Clustering](https://upload.wikimedia.org/wikipedia/commons/d/d1/KMeans-density-data.svg)
 
 ## References
 
