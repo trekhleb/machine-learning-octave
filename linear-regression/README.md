@@ -10,7 +10,7 @@ On the image above there is an example of dependency between input variable _x_ 
 
 Each training example consists of features (variables) that describe this example (i.e. number of rooms, the square of the apartment etc.)
 
-![Features](../images/linear-regression/features.svg)
+![Features](./formulas/features.svg)
 
 _n_ - number of features
 
@@ -20,13 +20,13 @@ _R<sup>n+1</sup>_ - vector of _n+1_ real numbers
 
 Parameters of the hypothesis we want our algorithm to learn in order to be able to do predictions (i.e. predict the price of the apartment).
 
-![Parameters](../images/linear-regression/parameters.svg)
+![Parameters](./formulas/parameters.svg)
 
 ## Hypothesis
 
 The equation that gets features and parameters as an input and predicts the value as an output (i.e. predict the price of the apartment based on its size and number of rooms).
 
-![Hypothesis](../images/linear-regression/hypothesis.svg)
+![Hypothesis](./formulas/hypothesis.svg)
 
 For convenience of notation, define _X<sub>0</sub> = 1_
 
@@ -34,7 +34,7 @@ For convenience of notation, define _X<sub>0</sub> = 1_
 
 Function that shows how accurate the predictions of the hypothesis are with current set of parameters.
 
-![Cost Function](../images/linear-regression/cost-function.svg)
+![Cost Function](./formulas/cost-function.svg)
 
 _x<sup>i</sup>_ - input (features) of _i<sup>th</sup>_ training example
 
@@ -58,17 +58,17 @@ Once we decided what direction we need to go we need to decide what the size of 
 
 ![Gradient Descent](https://cdn-images-1.medium.com/max/1600/0*QwE8M4MupSdqA3M4.png)
 
-We need to simultaneously update ![Theta](../images/linear-regression/theta-j.svg) for _j = 0, 1, ..., n_
+We need to simultaneously update ![Theta](./formulas/theta-j.svg) for _j = 0, 1, ..., n_
 
-![Gradient Descent](../images/linear-regression/gradient-descent-1.svg)
+![Gradient Descent](./formulas/gradient-descent-1.svg)
 
-![Gradient Descent](../images/linear-regression/gradient-descent-2.svg)
+![Gradient Descent](./formulas/gradient-descent-2.svg)
 
-![alpha](../images/linear-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+![alpha](./formulas/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
 
-![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](./formulas/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![x-i](../images/linear-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+![x-i](./formulas/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
@@ -82,19 +82,19 @@ _n_ - number of features
 
 To make linear regression and gradient descent algorithm work correctly we need to make sure that features are on a similar scale.
 
-![Feature Scaling](../images/linear-regression/feature-scaling.svg)
+![Feature Scaling](./formulas/feature-scaling.svg)
 
 For example "apartment size" feature (e.g. 120 m<sup>2</sup>) is much bigger than the "number of rooms" feature (e.g. 2).
 
 In order to scale the features we need to do **mean normalization**
 
-![Mean Normalization](../images/linear-regression/mean-normalization.svg)
+![Mean Normalization](./formulas/mean-normalization.svg)
 
-![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](./formulas/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![mu-j](../images/linear-regression/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
+![mu-j](./formulas/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
 
-![s-j](../images/linear-regression/s-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
+![s-j](./formulas/s-j.svg) - the range (_max - min_) of _j<sup>th</sup>_ feature in training set.
 
 ## Polynomial Regression
 
@@ -110,13 +110,13 @@ You may form polynomial regression by adding new polynomial features.
 
 For example if the price of the apartment is in non-linear dependency of its size then you might add several new size-related features. 
 
-![Polynomial Regression](../images/linear-regression/polynomial-regression.svg)
+![Polynomial Regression](./formulas/polynomial-regression.svg)
 
 ## Normal Equation
 
 There is a closed-form solution to linear regression exists and it looks like the following:
 
-![Normal Equation](../images/linear-regression/normal-equation.svg)
+![Normal Equation](./formulas/normal-equation.svg)
 
 Using this formula does not require any feature scaling, and you will get an exact solution in one calculation: there is no “loop until convergence” like in gradient descent.
 
@@ -126,7 +126,7 @@ Using this formula does not require any feature scaling, and you will get an exa
 
 If we have too many features, the learned hypothesis may fit the **training** set very well:
 
-![overfitting](../images/linear-regression/overfitting-1.svg)
+![overfitting](./formulas/overfitting-1.svg)
 
 **But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
 
@@ -145,15 +145,15 @@ Here are couple of options that may be addressed:
 
 Regularization works by adding regularization parameter to the **cost function**:
 
-![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
+![Cost Function](./formulas/cost-function-with-regularization.svg)
 
-> Note that you should not regularize the parameter ![theta zero](../images/linear-regression/theta-0.svg).
+> Note that you should not regularize the parameter ![theta zero](./formulas/theta-0.svg).
 
-![regularization parameter](../images/linear-regression/lambda.svg) - regularization parameter
+![regularization parameter](./formulas/lambda.svg) - regularization parameter
 
 In this case the **gradient descent** formula will look like the following:
 
-![Gradient Descent](../images/linear-regression/gradient-descent-3.svg)
+![Gradient Descent](./formulas/gradient-descent-3.svg)
 
 ## Files
 
