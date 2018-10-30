@@ -191,12 +191,12 @@ exit
 - [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.
 - [gradient_step.m](./gradient_step.m) - function that performs just one gradient descent step.
 - [gradient_callback.m](./gradient_callback.m) - function that aggregates gradient step and cost function values for `fminunc`.
-- [microchips_tests.csv](./microchips_tests.csv) - training data set of microchip parameters and their validity.
+- [data/microchips_tests.csv](./data/microchips_tests.csv) - training data set of microchip parameters and their validity.
+- [data/digits.mat](./data/digits.mat) - training set of labeled hand-written digits.
 - [add_polynomial_features.m](./add_polynomial_features.m) - function that generates new polynomial features for training set in order to make decision boundaries to have complex form.
 - [one_vs_all.m](./one_vs_all.m) - trains 10 logistic regression model each of which recognizes specific number starting from 0 to 9.
 - [one_vs_all_predict.m](./one_vs_all_predict.m) - predicts what the digit is written based on one-vs-all logistic regression approach.
 - [fmincg.m](./fmincg.m) - function that does gradient descent as ans alternative to `fminunc()`.
-- [digits.mat](./digits.mat) - training set of labeled hand-written digits.
 - [display_data.m](./display_data.m) - function that displays training set hand-written digits.
 - [sigmoid.m](./sigmoid.m) - sigmoid function.
 

@@ -5,7 +5,7 @@ clear; close all; clc;
 fprintf('Loading the training data from file...\n\n');
 
 % Loading training data from file.
-data = load('house_prices.csv');
+data = load('./data/house_prices.csv');
 
 % Split data into features and results.
 X = data(:, 1:2);

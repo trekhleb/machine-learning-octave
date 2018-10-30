@@ -6,7 +6,7 @@ clear; close all; clc;
 % Load the data --------------------------------------------------------
 fprintf('Loading the data...\n\n');
 
-data = load('microchips_tests.csv');
+data = load('./data/microchips_tests.csv');
 
 X = data(:, 1:2);
 y = data(:, 3);
@@ -97,7 +97,7 @@ clear; close all; clc;
 
 % Load training data
 fprintf('Loading training data...\n');
-load('digits.mat');
+load('./data/digits.mat');
 
 % Plotting some training example ----------------------------------------------------
 fprintf('Visualizing data...\n');

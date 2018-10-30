@@ -8,7 +8,7 @@ fprintf('Loading and visualizing data...\n');
 
 % Load data.
 % X and y will be loaded automatically.
-load('linear-data.mat');
+load('./data/linear-set.mat');
 
 % Plot training data
 plot_data(X, y);
@@ -30,7 +30,7 @@ pause;
 
 % Load data.
 % X and y will be loaded automatically.
-load('non-linear-data.mat');
+load('./data/non-linear-set.mat');
 
 % SVM Parameters
 C = 1;
