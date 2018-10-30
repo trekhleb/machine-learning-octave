@@ -32,6 +32,12 @@ Another illustration of k-means convergence:
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/d/d1/KMeans-density-data.svg)
 
+## K-means Optimization Objective
+
+![c-i](./formulas/c-i.svg) - index of cluster _(1, 2, ..., K)_ to which example _x<sup>(i)</sup>_ is currently assigned.
+
+![mu-k](./formulas/mu-k.svg) - cluster centroid _k_ (![mu-k-2](./formulas/mu-k-2.svg)) and ![k](./formulas/k.svg)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
