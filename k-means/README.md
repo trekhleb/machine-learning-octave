@@ -6,10 +6,31 @@ The result of a cluster analysis shown below as the coloring of the squares into
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/c/c8/Cluster-2.svg)
 
+## Description
+
+Given a training set of observations:
+
+![Training set](./formulas/training-set.svg)
+
+![x-i](./formulas/x-i.svg)
+
+Where each observation is a _d_-dimensional real vector, k-means clustering aims to partition the _m_ observations into _K_ (_≤ m_) clusters:
+
+![Clusters](./formulas/clasters.svg)
+
+... so as to minimize the within-cluster sum of squares (i.e. variance).
+
+Below you may find an example of random cluster centroids initialization and further clusters convergence:
+
 ![Clustering](http://shabal.in/visuals/kmeans/random.gif)
 
 [Picture Source](http://shabal.in/visuals/kmeans/6.html)
 
+Convergence of k-means:
+
+![Clustering](https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
+- [K-means on Wikipedia](https://en.wikipedia.org/wiki/K-means_clustering)
