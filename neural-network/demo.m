@@ -41,6 +41,9 @@ layers = [
     10      % Output layer - 10 labels, from 1 to 10 (note that we have mapped "0" to label 10).
 ];
 
+% Training neural network -----------------------------------------------------------
+fprintf('Training neural network...\n');
+
 % Defines the range for initial theta values.
 epsilon = 0.12;
 
@@ -48,17 +51,15 @@ epsilon = 0.12;
 lambda = 0.01;
 
 % Number of iterations to perform for gradient descent.
-max_iterations = 50;
+max_iterations = 30;
 
 % Train neural network.
 [nn_params, cost] = neural_network_train(X, y, layers, lambda, epsilon, max_iterations);
 
-% Training neural network -----------------------------------------------------------
-fprintf('Training neural network...\n');
+% Calculate training set accuracy ---------------------------------------------------
+fprintf('Calculate training set accuracy...\n');
 
 % After training the neural network, we would like to use it to predict the labels.
 predictions = neural_network_predict(X, nn_params, layers);
 
-% Calculate training set accuracy ---------------------------------------------------
-fprintf('Calculate training set accuracy...\n');
 fprintf('Training Set Accuracy: %f\n', mean(double(predictions == y)) * 100);

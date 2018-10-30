@@ -244,7 +244,6 @@ exit
 - [sigmoid.m](./sigmoid.m) - sigmoid function.
 - [unroll.m](./unroll.m) - transforms matrices of theta for each layer into one flat vector.
 
-
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
