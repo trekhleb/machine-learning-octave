@@ -30,7 +30,7 @@ Another illustration of k-means convergence:
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif)
 
-## K-means Optimization Objective
+## Cost Function (Distortion)
 
 ![c-i](./formulas/c-i.svg) - index of cluster _(1, 2, ..., K)_ to which example _x<sup>(i)</sup>_ is currently assigned.
 
@@ -47,6 +47,14 @@ In this case optimization objective will look like the following:
 ![Cost Function](./formulas/cost-function.svg)
 
 ![Clustering](https://upload.wikimedia.org/wikipedia/commons/d/d1/KMeans-density-data.svg)
+
+## The Algorithm
+
+Randomly initialize _K_ cluster centroids (randomly pick _K_ training examples and set _K_ cluster centroids to that examples).
+
+![Centroids](./formulas/centroids.svg)
+
+![k-means-algorithm](./formulas/k-means-algorithm.svg)
 
 ## References
 
