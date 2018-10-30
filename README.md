@@ -13,13 +13,14 @@ Real value prediction.
 ### Classification
 
 - [Logistic Regression](./logistic-regression) - Examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach
-- [Neural Network](./neural-network) (NN) - Example: handwritten digits recognition.
+- [Neural Network](./neural-network) (NN) - Example: handwritten digits recognition
 
 ## Unsupervised Learning
 
 ### Clustering
 
 - [K-means algorithm](./k-means)
+- [Anomaly Detection](./anomaly-detection) (using Gaussian distribution)
 
 ## How to Use This Repository
 
