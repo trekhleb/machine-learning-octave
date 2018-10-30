@@ -64,11 +64,11 @@ We need to simultaneously update ![Theta](../images/linear-regression/theta-j.sv
 
 ![Gradient Descent](../images/linear-regression/gradient-descent-2.svg)
 
-![alpha](../images/shared/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+![alpha](../images/linear-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
 
-![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![x-i](../images/shared/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+![x-i](../images/linear-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
@@ -90,7 +90,7 @@ In order to scale the features we need to do **mean normalization**
 
 ![Mean Normalization](../images/linear-regression/mean-normalization.svg)
 
-![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/linear-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
 ![mu-j](../images/linear-regression/mu-j.svg) - average value of _j<sup>th</sup>_ feature in training set
 
@@ -126,7 +126,7 @@ Using this formula does not require any feature scaling, and you will get an exa
 
 If we have too many features, the learned hypothesis may fit the **training** set very well:
 
-![overfitting](../images/shared/overfitting-1.svg)
+![overfitting](../images/linear-regression/overfitting-1.svg)
 
 **But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
 
@@ -147,9 +147,9 @@ Regularization works by adding regularization parameter to the **cost function**
 
 ![Cost Function](../images/linear-regression/cost-function-with-regularization.svg)
 
-> Note that you should not regularize the parameter ![theta zero](../images/shared/theta-0.svg).
+> Note that you should not regularize the parameter ![theta zero](../images/linear-regression/theta-0.svg).
 
-![regularization parameter](../images/shared/lambda.svg) - regularization parameter
+![regularization parameter](../images/linear-regression/lambda.svg) - regularization parameter
 
 In this case the **gradient descent** formula will look like the following:
 

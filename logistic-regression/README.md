@@ -90,11 +90,11 @@ We need to simultaneously update ![Theta](../images/logistic-regression/theta-j.
 
 ![Gradient Descent](../images/logistic-regression/gradient-descent-2.svg)
 
-![alpha](../images/shared/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
+![alpha](../images/logistic-regression/alpha.svg) - the learning rate, the constant that defines the size of the gradient descent step
 
-![x-i-j](../images/shared/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
+![x-i-j](../images/logistic-regression/x-i-j.svg) - _j<sup>th</sup>_ feature value of the _i<sup>th</sup>_ training example
 
-![x-i](../images/shared/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
+![x-i](../images/logistic-regression/x-i.svg) - input (features) of _i<sup>th</sup>_ training example
 
 _y<sup>i</sup>_ - output of _i<sup>th</sup>_ training example
 
@@ -121,7 +121,7 @@ To handle these type of issues we may train a logistic regression classifier ![M
 
 If we have too many features, the learned hypothesis may fit the **training** set very well:
 
-![overfitting](../images/shared/overfitting-1.svg)
+![overfitting](../images/logistic-regression/overfitting-1.svg)
 
 **But** it may fail to generalize to **new** examples (let's say predict prices on new example of detecting if new messages are spam).
 
@@ -142,9 +142,9 @@ Regularization works by adding regularization parameter to the **cost function**
 
 ![Cost Function](../images/logistic-regression/cost-function-with-regularization.svg)
 
-![regularization parameter](../images/shared/lambda.svg) - regularization parameter
+![regularization parameter](../images/logistic-regression/lambda.svg) - regularization parameter
 
-> Note that you should not regularize the parameter ![theta zero](../images/shared/theta-0.svg).
+> Note that you should not regularize the parameter ![theta zero](../images/logistic-regression/theta-0.svg).
 
 In this case the **gradient descent** formula will look like the following:
 
