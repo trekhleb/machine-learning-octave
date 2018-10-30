@@ -56,6 +56,16 @@ Randomly initialize _K_ cluster centroids (randomly pick _K_ training examples a
 
 ![k-means-algorithm](./formulas/k-means-algorithm.svg)
 
+## Files
+
+- [demo.m](./demo.m) - main demo file that you should run from Octave console.
+- [data/set1.mat](./data/set1.mat) - training data set #1.
+- [data/set2.mat](./data/set2.mat) - training data set #2.
+- [compute_centroids.m](./compute_centroids.m) - compute the next mean centroid for each cluster.
+- [find_closest_centroids.m](./find_closest_centroids.m) - split training examples into cluster based on the distance to centroids.
+- [init_centroids.m](./init_centroids.m) - randomly init centroids by taking random training examples.
+- [k_means_train.m](./k_means_train.m) - function that runs K-Means algorithm.
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
