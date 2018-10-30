@@ -1,6 +1,6 @@
 % LOGISTIC REGRESSION function.
 % Calculate the optimal thetas for given training set and output values.
-function [theta, J, J_history, exit_flag] = logistic_regression(X, y, lambda)
+function [theta, J, J_history, exit_flag] = logistic_regression_train(X, y, lambda)
     % X - training set.
     % y - training output values.
     % lambda - regularization parameter.

@@ -39,7 +39,7 @@ X = add_polynomial_features(X(:, 1), X(:, 2), polynomial_degree);
 
 % Run the regression.
 lambda = 1;
-[theta, J, J_history, exit_flag] = logistic_regression(X, y, lambda);
+[theta, J, J_history, exit_flag] = logistic_regression_train(X, y, lambda);
 
 fprintf('- Initial cost: %f\n', J_history(1));
 fprintf('- Optimized cost: %f\n\n', J);

@@ -158,7 +158,7 @@ In this case the **gradient descent** formula will look like the following:
 ## Files
 
 - [demo.m](./demo.m) - linear regression demo script that loads test data and plots linear regression predictions.
-- [linear_regression.m](./linear_regression.m) - linear regression algorithm.
+- [linear_regression_train.m](./linear_regression_train.m) - linear regression algorithm.
 - [hypothesis.m](./hypothesis.m) - linear regression hypothesis function.
 - [cost_function.m](./cost_function.m) - linear regression cost function.
 - [feature_normalize.m](./feature_normalize.m) - function that normalizes features.

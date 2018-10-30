@@ -1,5 +1,5 @@
 % Predict the label of an input given a trained neural network.
-function predictions = predict(X, nn_params, layers)
+function predictions = neural_network_predict(X, nn_params, layers)
     % Useful values
     m = size(X, 1);
     num_labels = size(nn_params{end}, 1);

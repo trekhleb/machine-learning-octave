@@ -185,7 +185,7 @@ exit
 ## Files
 
 - [demo.m](./demo.m) - logistic regression demo script that loads test data and plots decision predictions.
-- [logistic_regression.m](./logistic_regression.m) - logistic regression algorithm.
+- [logistic_regression_train.m](./logistic_regression_train.m) - logistic regression algorithm.
 - [hypothesis.m](./hypothesis.m) - logistic regression hypothesis function.
 - [cost_function.m](./cost_function.m) - logistic regression cost function.
 - [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.

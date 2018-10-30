@@ -51,13 +51,13 @@ lambda = 0.01;
 max_iterations = 50;
 
 % Train neural network.
-[nn_params, cost] = neural_network(X, y, layers, lambda, epsilon, max_iterations);
+[nn_params, cost] = neural_network_train(X, y, layers, lambda, epsilon, max_iterations);
 
 % Training neural network -----------------------------------------------------------
 fprintf('Training neural network...\n');
 
 % After training the neural network, we would like to use it to predict the labels.
-predictions = predict(X, nn_params, layers);
+predictions = neural_network_predict(X, nn_params, layers);
 
 % Calculate training set accuracy ---------------------------------------------------
 fprintf('Calculate training set accuracy...\n');

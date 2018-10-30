@@ -1,5 +1,5 @@
 % LINEAR REGRESSION function.
-function [theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, lambda, num_iterations)
+function [theta mu sigma X_normalized J_history] = linear_regression_train(X, y, alpha, lambda, num_iterations)
     % X - training set.
     % y - training set output values.
     % alpha - learning rate (gradient descent step size).

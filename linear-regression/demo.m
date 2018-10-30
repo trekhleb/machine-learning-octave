@@ -35,7 +35,7 @@ lambda = 0;
 
 alpha = 0.1;
 num_iterations = 50;
-[theta mu sigma X_normalized J_history] = linear_regression(X, y, alpha, lambda, num_iterations);
+[theta mu sigma X_normalized J_history] = linear_regression_train(X, y, alpha, lambda, num_iterations);
 
 fprintf('- Initial cost: %f\n', J_history(1));
 fprintf('- Optimized cost: %f\n', J_history(end));

@@ -1,5 +1,5 @@
 % NEURAL NETWORK function.
-function [nn_params, cost] = neural_network(X, y, layers, lambda, epsilon, max_iterations)
+function [nn_params, cost] = neural_network_train(X, y, layers, lambda, epsilon, max_iterations)
     % The range for initial theta values.
     nn_params = nn_params_init(layers, epsilon);
 
