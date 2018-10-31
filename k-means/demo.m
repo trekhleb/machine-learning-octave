@@ -9,7 +9,6 @@ load('set1.mat');
 
 % Plotting the data.
 fprintf('Plotting the data set #1...\n');
-figure(1, 'position', [50, 50, 850, 650]);
 subplot(2, 2, 1);
 plot(X(:, 1), X(:, 2), 'k+','LineWidth', 1, 'MarkerSize', 7);
 title('Training Set #1');

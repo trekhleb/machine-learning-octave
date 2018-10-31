@@ -14,9 +14,6 @@ y = data(:, 3);
 % Plotting training data -------------------------------------------------------
 fprintf('Plotting the training data...\n\n');
 
-% Create a window, position and resize it.
-figure(1, 'position', [50, 50, 850, 650]);
-
 % Split the figure on 2x2 sectors.
 % Start drawing in first sector.
 subplot(2, 2, 1);
