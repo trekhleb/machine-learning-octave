@@ -52,6 +52,12 @@ _Usage examples: as a substitute of all other algorithms in general, image recog
 
 🤖 [Neural Network: Multilayer Perceptron (MLP)](./neural-network) - example: handwritten digits recognition.
 
+## Machine Learning Map
+
+![Machine Learning Map](./images/machine-learning-map.png)
+
+The source of the following machine learning topics map is [this wonderful blog post](https://vas3k.ru/blog/machine_learning/)
+
 ## How to Use This Repository
 
 ### Install Octave or MatLab
