@@ -14,7 +14,7 @@ In regression problems we do real value predictions. Basically we try to draw a 
 
 _Usage examples: stock price forecast, sales analysis, dependency of any number, etc._
 
-- 🤖 [Linear Regression](./linear-regression) - example: house prices prediction.
+🤖 [Linear Regression](./linear-regression) - example: house prices prediction.
 
 ### Classification
 
@@ -22,7 +22,7 @@ In classification problems we split input examples by certain characteristic.
 
 _Usage examples: spam-filters, language detection, finding similar documents, handwritten letters recognition, etc._
 
-- 🤖 [Logistic Regression](./logistic-regression) - examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach.
+🤖 [Logistic Regression](./logistic-regression) - examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach.
 
 ## Unsupervised Learning
 
@@ -34,7 +34,7 @@ In clustering problems we split the training examples by unknown characteristics
 
 _Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, image compression, etc._
 
-- 🤖 [K-means algorithm](./k-means) - example: split data into three clusters.
+🤖 [K-means algorithm](./k-means) - example: split data into three clusters.
 
 ### Anomaly Detection
 
@@ -42,7 +42,7 @@ Anomaly detection (also outlier detection) is the identification of rare items, 
 
 _Usage examples: intrusion detection, fraud detection, system health monitoring, removing anomalous data from the dataset etc._
 
-- 🤖 [Anomaly Detection using Gaussian distribution](./anomaly-detection) - example: detect overloaded server.
+🤖 [Anomaly Detection using Gaussian distribution](./anomaly-detection) - example: detect overloaded server.
 
 ## Neural Network (NN)
 
@@ -50,7 +50,7 @@ The neural network itself isn't an algorithm, but rather a framework for many di
 
 _Usage examples: as a substitute of all other algorithms in general, image recognition, voice recognition, image processing (applying specific style), language translation, etc._
 
-- 🤖 [Neural Network: Multilayer Perceptron (MLP)](./neural-network) - example: handwritten digits recognition.
+🤖 [Neural Network: Multilayer Perceptron (MLP)](./neural-network) - example: handwritten digits recognition.
 
 ## How to Use This Repository
 
