@@ -24,7 +24,9 @@ Real value prediction.
 
 ## How to Use This Repository
 
-### Install Octave
+### Install Octave or MatLab
+
+This repository contains `*.m` scripts that are intended to be run in [Octave](https://www.gnu.org/software/octave/) or [MatLab](https://www.mathworks.com/products/matlab.html). Thus in order to launch demos you need either Octave or MatLab to be installed on you local machine. In case of MatLab you may also use its [web-version](https://matlab.mathworks.com/).
 
 ### Run Demos
 
