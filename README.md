@@ -23,7 +23,6 @@ In classification problems we split input examples by certain characteristic.
 _Usage examples: spam-filters, language detection, finding similar documents, handwritten letters recognition, etc._
 
 - [Logistic Regression](./logistic-regression) - examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach.
-- [Neural Network](./neural-network) (NN) - example: handwritten digits recognition.
 
 ## Unsupervised Learning
 
@@ -44,6 +43,14 @@ Anomaly detection (also outlier detection) is the identification of rare items, 
 _Usage examples: intrusion detection, fraud detection, system health monitoring, removing anomalous data from the dataset etc._
 
 - [Anomaly Detection using Gaussian distribution](./anomaly-detection) - example: detect overloaded server.
+
+## Neural Network (NN)
+
+The neural network itself isn't an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.
+
+_Usage examples: as a substitute of all other algorithms in general, image recognition, voice recognition, image processing (applying specific style), language translation, etc._
+
+- [Neural Network: Multilayer Perceptron (MLP)](./neural-network) - example: handwritten digits recognition.
 
 ## How to Use This Repository
 
