@@ -1,11 +1,16 @@
 % Computes the probability density function of the multivariate gaussian distribution.
-function p = multivariate_gaussian(X, mu, Sigma2)
-    k = length(mu);
+function probabilities = multivariate_gaussian(X, mu, sigma2)
+    % Get number of training sets and features.
+    [m n] = size(X);
 
-    if (size(Sigma2, 2) == 1) || (size(Sigma2, 1) == 1)
-        Sigma2 = diag(Sigma2);
+    % Init probabilities matrix.
+    probabilities = ones(m, 1);
+
+    % Go through all traing examples and through all features.
+    for i=1:m
+        for j=1:n
+            p = (1 / sqrt(2 * pi * sigma2(j))) * exp(-(X(i, j) - mu(j)) .^ 2 / (2 * sigma2(j)));
+            probabilities(i) = probabilities(i) * p;
+        end
     end
-
-    X = bsxfun(@minus, X, mu(:)');
-    p = (2 * pi) ^ (- k / 2) * det(Sigma2) ^ (-0.5) * exp(-0.5 * sum(bsxfun(@times, X * pinv(Sigma2), X), 2));
 end

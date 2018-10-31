@@ -17,11 +17,11 @@ ylabel('Throughput (mb/s)');
 title('Servers Parameters');
 
 % Returns the density of the multivariate normal at each data point (row) of X.
-pval = multivariate_gaussian(X, mu, sigma2);
+probabilities = multivariate_gaussian(X, mu, sigma2);
 
 % Select best threshold.
 fprintf('Selecting a best threshold...\n');
-[epsilon F1] = select_threshold(yval, pval);
+[epsilon F1] = select_threshold(yval, probabilities);
 
 fprintf('Best epsilon found using cross-validation: %e\n', epsilon);
 fprintf('Best F1 on Cross Validation Set:  %f\n', F1);
@@ -30,7 +30,7 @@ fprintf('Best F1 on Cross Validation Set:  %f\n', F1);
 fprintf('Plottin outliers...\n');
 
 %  Find the outliers in the training set and plot them.
-outliers = find(pval < epsilon);
+outliers = find(probabilities < epsilon);
 
 %  Draw a red circle around those outliers
 hold on
