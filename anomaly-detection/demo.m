@@ -35,4 +35,5 @@ outliers = find(probabilities < epsilon);
 %  Draw a red circle around those outliers
 hold on
 plot(X(outliers, 1), X(outliers, 2), 'ro', 'LineWidth', 2, 'MarkerSize', 10);
+legend('Training set', 'Gaussian contour', 'Anomalies');
 hold off
