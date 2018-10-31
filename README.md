@@ -24,7 +24,7 @@ Real value prediction.
 ### Clustering
 
 - [🤖 K-means algorithm](./k-means)
-- [🤖 Anomaly Detection](./anomaly-detection) (using Gaussian distribution)
+- [→ Anomaly Detection](./anomaly-detection) (using Gaussian distribution)
 
 ## How to Use This Repository
 
