@@ -5,7 +5,7 @@ clear; close all; clc;
 
 % Loading the data.
 fprintf('Loading the data set #1...\n');
-load('./data/set1.mat');
+load('set1.mat');
 
 % Plotting the data.
 fprintf('Plotting the data set #1...\n');
@@ -41,7 +41,7 @@ hold off;
 
 % Loading the data.
 fprintf('Loading the data set #2...\n');
-load('./data/set2.mat');
+load('set2.mat');
 
 % Plotting the data.
 fprintf('Plotting the data set #2...\n');

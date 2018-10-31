@@ -164,12 +164,12 @@ In this case the **gradient descent** formula will look like the following:
 - [feature_normalize.m](./feature_normalize.m) - function that normalizes features.
 - [gradient_descent.m](./gradient_descent.m) - function that performs gradient descent.
 - [gradient_step.m](./gradient_step.m) - function that performs just one gradient descent step.
-- [data/house_prices.csv](./data/house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
+- [house_prices.csv](./house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
 - [normal_equation.m](./normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
 
 ### Demo visualizations
 
-![Demo visualization](./images/demo.png)
+![Demo visualization](./formulas/demo.png)
 
 ## References
 

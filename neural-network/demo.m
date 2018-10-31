@@ -4,7 +4,7 @@ clear; close all; clc;
 % Load training data ----------------------------------------------------------------
 fprintf('Loading data...\n');
 
-load('./data/digits.mat');
+load('digits.mat');
 m = size(X, 1);
 
 % Plotting some training example ----------------------------------------------------

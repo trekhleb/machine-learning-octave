@@ -199,7 +199,7 @@ Before starting forward propagation we need to initialize Theta parameters. We c
 - [debug_initialize_weights.m](./debug_initialize_weights.m) - function that initializes network thetas not randomly for debugging purposes.
 - [debug_nn_gradients.m](./debug_nn_gradients.m) - function that helps to debug backpropagation gradients by comparing them to numerically calculated gradients.
 - [debug_numerical_gradient.m](./debug_numerical_gradient.m) - calculate the gradient numerically (using small epsilon step at certain point).
-- [data/digits.mat](./data/digits.mat) - training set of labeled hand-written digits.
+- [digits.mat](./digits.mat) - training set of labeled hand-written digits.
 - [display_data.m](./display_data.m) - helper function that renders randomly selected digits from training set.
 - [fmincg.m](./fmincg.m) - function that does gradient descent (alternative to `fminunc()`).
 - [nn_backpropagation.m](./nn_backpropagation.m) - function that performs backpropagation for neural network.
@@ -214,7 +214,7 @@ Before starting forward propagation we need to initialize Theta parameters. We c
 
 ### Demo visualizations
 
-![Demo visualization](./images/demo.png)
+![Demo visualization](./formulas/demo.png)
 
 ## References
 

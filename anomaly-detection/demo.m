@@ -3,7 +3,7 @@ clear; close all; clc;
 
 % Load the data.
 fprintf('Loading data...\n');
-load('./data/servers_params.mat');
+load('servers_params.mat');
 
 % Estimate mu and sigma2.
 fprintf('Estimating mu and sigma2...\n');
