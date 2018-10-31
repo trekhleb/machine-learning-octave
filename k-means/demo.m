@@ -1,7 +1,7 @@
 % Initialization
 clear; close all; clc;
 
-# Clustering Set #1 ---------------------------------------------------------------------
+% Clustering Set #1 ---------------------------------------------------------------------
 
 % Loading the data.
 fprintf('Loading the data set #1...\n');
@@ -37,7 +37,7 @@ end
 title('Clustered Set #1');
 hold off;
 
-# Clustering Set #2 ---------------------------------------------------------------------
+% Clustering Set #2 ---------------------------------------------------------------------
 
 % Loading the data.
 fprintf('Loading the data set #2...\n');
