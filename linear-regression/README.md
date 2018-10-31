@@ -167,6 +167,10 @@ In this case the **gradient descent** formula will look like the following:
 - [data/house_prices.csv](./data/house_prices.csv) - training data set of house prices (depending on number of rooms and house size).
 - [normal_equation.m](./normal_equation.m) - function that does alternative calculation of model parameters using normal equation (avoiding gradient descent).
 
+### Demo visualizations
+
+![Demo visualization](./images/demo.png)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)

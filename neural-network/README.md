@@ -212,6 +212,10 @@ Before starting forward propagation we need to initialize Theta parameters. We c
 - [sigmoid.m](./sigmoid.m) - sigmoid function.
 - [unroll.m](./unroll.m) - transforms matrices of theta for each layer into one flat vector.
 
+### Demo visualizations
+
+![Demo visualization](./images/demo.png)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)

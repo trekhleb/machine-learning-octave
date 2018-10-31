@@ -66,6 +66,10 @@ Randomly initialize _K_ cluster centroids (randomly pick _K_ training examples a
 - [init_centroids.m](./init_centroids.m) - randomly init centroids by taking random training examples.
 - [k_means_train.m](./k_means_train.m) - function that runs K-Means algorithm.
 
+### Demo visualizations
+
+![Demo visualization](./images/demo.png)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)

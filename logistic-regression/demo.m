@@ -14,14 +14,12 @@ y = data(:, 3);
 % Plotting the data ----------------------------------------------------
 fprintf('Plotting the data...\n\n');
 
-figure(1, 'position', [50, 50, 850, 650]);
-hold on;
-
 % Find indices of positive and negative examples.
 positiveIndices = find(y == 1);
 negativeIndices = find(y == 0);
 
 % Plot examples.
+hold on;
 plot(X(positiveIndices, 1), X(positiveIndices, 2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
 plot(X(negativeIndices, 1), X(negativeIndices, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 

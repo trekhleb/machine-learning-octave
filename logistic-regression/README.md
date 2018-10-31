@@ -168,6 +168,10 @@ In this case the **gradient descent** formula will look like the following:
 - [display_data.m](./display_data.m) - function that displays training set hand-written digits.
 - [sigmoid.m](./sigmoid.m) - sigmoid function.
 
+### Demo visualizations
+
+![Demo visualization](./images/demo.png)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)

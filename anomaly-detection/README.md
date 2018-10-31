@@ -106,6 +106,10 @@ _fn_ - number of false negatives.
 - [select_threshold.m](./select_threshold.m) - function that finds the best threshold (epsilon) to use for selecting outliers.
 - [visualize_fit.m](./visualize_fit.m) - Function that visualizes the data set and its estimated distribution.
 
+### Demo visualizations
+
+![Demo visualization](./images/demo.png)
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
