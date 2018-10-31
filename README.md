@@ -10,14 +10,20 @@ In supervised learning we have a set of training data as an input and a set of l
 
 ### Regression
 
-Real value prediction.
+In regression problems we do real value predictions.
 
-- [Linear Regression](./linear-regression) - Example: house prices prediction
+_Usage examples: stock price forecast, sales analysis, dependency of any number, etc._
+
+- [Linear Regression](./linear-regression) - example: house prices prediction.
 
 ### Classification
 
-- [Logistic Regression](./logistic-regression) - Examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach
-- [Neural Network](./neural-network) (NN) - Example: handwritten digits recognition
+In classification problems we split input examples by certain characteristic.
+
+_Usage examples: spam-filters, language detection, finding similar documents, handwritten letters recognition, etc._
+
+- [Logistic Regression](./logistic-regression) - examples: microchip fitness detection, handwritten digits recognitions using one-vs-all approach.
+- [Neural Network](./neural-network) (NN) - example: handwritten digits recognition.
 
 ## Unsupervised Learning
 
@@ -25,8 +31,12 @@ Unsupervised learning is a branch of machine learning that learns from test data
 
 ### Clustering
 
-- [K-means algorithm](./k-means)
-- [Anomaly Detection](./anomaly-detection) (using Gaussian distribution)
+In clustering problems we split the training examples by unknown characteristics. The algorithm itself decides what characteristic to use for splitting.
+
+_Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, data compression, etc._
+
+- [K-means algorithm](./k-means) - example: split data into three clusters.
+- [Anomaly Detection](./anomaly-detection) (using Gaussian distribution) - example: detect overloaded server.
 
 ## How to Use This Repository
 
