@@ -1,4 +1,4 @@
-% Find the best threshold (epsilon) to use for selecting outliers.
+% Finds the best threshold (epsilon) to use for selecting outliers.
 function [best_epsilon best_F1] = select_threshold(yval, probabilities)
     best_epsilon = 0;
     best_F1 = 0;
