@@ -33,7 +33,7 @@ Unsupervised learning is a branch of machine learning that learns from test data
 
 In clustering problems we split the training examples by unknown characteristics. The algorithm itself decides what characteristic to use for splitting.
 
-_Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, data compression, etc._
+_Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, image compression, etc._
 
 - [K-means algorithm](./k-means) - example: split data into three clusters.
 - [Anomaly Detection](./anomaly-detection) (using Gaussian distribution) - example: detect overloaded server.
