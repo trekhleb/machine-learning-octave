@@ -1,6 +1,6 @@
 # Machine Learning in Octave
 
-This repository contains [MatLab](https://www.mathworks.com/products/matlab.html)/[Octave](https://www.gnu.org/software/octave/) examples of popular machine learning algorithms with code examples and mathematics behind them being explained.
+This repository contains MatLab/Octave examples of popular machine learning algorithms with code examples and mathematics behind them being explained.
 
 The purpose of this repository was _not_ to implement machine learning algorithms using 3<sup>rd</sup> party libraries or Octave/MatLab "one-liners" _but_ rather to practice and to better understand the mathematics behind each algorithm. In most cases the explanations are based on [this great machine learning course](https://www.coursera.org/learn/machine-learning).
 
