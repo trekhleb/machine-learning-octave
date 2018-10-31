@@ -10,7 +10,7 @@ In supervised learning we have a set of training data as an input and a set of l
 
 ### Regression
 
-In regression problems we do real value predictions.
+In regression problems we do real value predictions. Basically we try to draw a line/plane/n-dimensional plane along the training examples.
 
 _Usage examples: stock price forecast, sales analysis, dependency of any number, etc._
 
@@ -36,7 +36,12 @@ In clustering problems we split the training examples by unknown characteristics
 _Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, image compression, etc._
 
 - [K-means algorithm](./k-means) - example: split data into three clusters.
-- [Anomaly Detection](./anomaly-detection) (using Gaussian distribution) - example: detect overloaded server.
+
+### Anomaly Detection
+
+_Usage examples: intrusion detection, fraud detection, system health monitoring, removing anomalous data from the dataset etc._
+
+- [Anomaly Detection using Gaussian distribution](./anomaly-detection) - example: detect overloaded server.
 
 ## How to Use This Repository
 
