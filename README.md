@@ -67,5 +67,3 @@ exit
 Also be aware that demo scripts opens additional window with charts and other graphical information that is related to the running algorithm. You may find screenshots of the window that each demo will render for you on the dedicated README files for each machine learning algorithm.
 
 ![Demos](./images/demos.png)
-
-![Demos](./images/demos_wide.png)
