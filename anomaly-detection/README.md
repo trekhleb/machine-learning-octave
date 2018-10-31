@@ -75,7 +75,40 @@ Anomaly if ![anomaly](./formulas/anomaly.svg)
 
 ![epsilon](./formulas/epsilon.svg) - probability threshold.
 
+## Algorithm Evaluation
+
+The algorithm may be evaluated using _F1_ score.
+
+The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at _1_ (perfect precision and recall) and worst at _0_.
+
+![F1 Score](https://upload.wikimedia.org/wikipedia/commons/2/26/Precisionrecall.svg)
+
+![f1](./formulas/f1.svg)
+
+Where:
+
+![precision](./formulas/precision.svg)
+
+![recall](./formulas/recall.svg)
+
+_tp_ - number of true positives.
+
+_fp_ - number of false positives.
+
+_fn_ - number of false negatives.
+
+## Files
+
+- [demo.m](./demo.m) - main file that you should run from Octave console in order to see the demo.
+- [server_params.mat](./data/server_params.mat) - training data set.
+- [estimate_gaussian.m](./estimate_gaussian.m) - this function estimates the parameters of a Gaussian distribution using the data in X.
+- [multivariate_gaussian.m](./multivariate_gaussian.m) - function that computes the probability density function of the multivariate gaussian distribution.
+- [select_threshold.m](./select_threshold.m) - function that finds the best threshold (epsilon) to use for selecting outliers.
+- [visualize_fit.m](./visualize_fit.m) - Function that visualizes the data set and its estimated distribution.
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
 - [Normal Distribution on Wikipedia](https://en.wikipedia.org/wiki/Normal_distribution)
+- [F1 Score on Wikipedia](https://en.wikipedia.org/wiki/F1_score)
+  

@@ -1,12 +1,13 @@
 % Find the best threshold (epsilon) to use for selecting outliers.
-function [bestEpsilon bestF1] = select_threshold(yval, pval)
-    bestEpsilon = 0;
-    bestF1 = 0;
+function [best_epsilon best_F1] = select_threshold(yval, probabilities)
+    best_epsilon = 0;
+    best_F1 = 0;
     F1 = 0;
 
-    stepsize = (max(pval) - min(pval)) / 1000;
-    for epsilon = min(pval):stepsize:max(pval)
-        predictions = (pval < epsilon);
+    stepsize = (max(probabilities) - min(probabilities)) / 1000;
+
+    for epsilon = min(probabilities):stepsize:max(probabilities)
+        predictions = (probabilities < epsilon);
 
         % The number of false positives: the ground truth label says it’s not 
         % an anomaly, but our algorithm incorrectly classified it as an anomaly.
@@ -29,9 +30,9 @@ function [bestEpsilon bestF1] = select_threshold(yval, pval)
         % F1.
         F1 = 2 * prec * rec / (prec + rec);
 
-        if F1 > bestF1
-            bestF1 = F1;
-            bestEpsilon = epsilon;
+        if F1 > best_F1
+            best_F1 = F1;
+            best_epsilon = epsilon;
         end
     end
 end

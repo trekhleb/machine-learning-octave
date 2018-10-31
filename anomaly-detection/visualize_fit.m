@@ -1,4 +1,4 @@
-% Visualize the dataset and its estimated distribution.
+% Visualizes the data set and its estimated distribution.
 function visualize_fit(X, mu, sigma2)
     [X1, X2] = meshgrid(0:.5:35); 
     Z = multivariate_gaussian([X1(:) X2(:)], mu, sigma2);
