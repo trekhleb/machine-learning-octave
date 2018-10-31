@@ -1,35 +1,35 @@
 % Initialization
 clear; close all; clc;
 
-% The following command loads the dataset. You should now have the
-% variables X, Xval, yval in your environment
+% Load the data.
+fprintf('Loading data...\n');
 load('./data/servers_params.mat');
 
-%  Visualize the example dataset
-plot(X(:, 1), X(:, 2), 'bx');
-axis([0 30 0 30]);
+% Estimate mu and sigma2.
+fprintf('Estimating mu and sigma2...\n');
+[mu sigma2] = estimate_gaussian(X);
+
+% Visualize the fit.
+fprintf('Visualizing data and Gaussian distribution...\n');
+visualize_fit(X,  mu, sigma2);
 xlabel('Latency (ms)');
 ylabel('Throughput (mb/s)');
 title('Servers Parameters');
 
-%  Estimate my and sigma2
-[mu sigma2] = estimate_gaussian(X);
-
-%  Visualize the fit
-visualize_fit(X,  mu, sigma2);
-xlabel('Latency (ms)');
-ylabel('Throughput (mb/s)');
-
-%  Returns the density of the multivariate normal at each data point (row) of X.
+% Returns the density of the multivariate normal at each data point (row) of X.
 pval = multivariate_gaussian(X, mu, sigma2);
 
+% Select best threshold.
+fprintf('Selecting a best threshold...\n');
 [epsilon F1] = select_threshold(yval, pval);
+
 fprintf('Best epsilon found using cross-validation: %e\n', epsilon);
 fprintf('Best F1 on Cross Validation Set:  %f\n', F1);
-fprintf('   (you should see a value epsilon of about 8.99e-05)\n');
-fprintf('   (you should see a Best F1 value of  0.875000)\n\n');
 
-%  Find the outliers in the training set and plot the
+% Plottin outliers.
+fprintf('Plottin outliers...\n');
+
+%  Find the outliers in the training set and plot them.
 outliers = find(pval < epsilon);
 
 %  Draw a red circle around those outliers

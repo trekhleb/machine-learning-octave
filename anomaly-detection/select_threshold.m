@@ -34,5 +34,4 @@ function [bestEpsilon bestF1] = select_threshold(yval, pval)
             bestEpsilon = epsilon;
         end
     end
-
 end
