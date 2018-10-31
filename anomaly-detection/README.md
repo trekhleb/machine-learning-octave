@@ -16,6 +16,65 @@ If _x_ is normally distributed then it may be displayed as follows.
 
 ![sigma-2](./formulas/sigma-2.svg) - variance.
 
+![x-normal](./formulas/x-normal.svg) - "~" means that _"x is distibuted as ..."_
+
+Then Gaussian distribution (probability that some _x_ may be a part of distribution with certain mean and variance) is given by:
+
+![Gaussian Distribution](./formulas/p.svg)
+
+## Estimating Parameters for a Gaussian
+
+We may use the following formulas to estimate Gaussian parameters (mean and variation) for _i<sup>th</sup>_ feature:
+
+![mu-i](./formulas/mu-i.svg)
+
+![sigma-i](./formulas/sigma-i.svg)
+
+![i](./formulas/i.svg)
+
+![m](./formulas/m.svg) - number of training examples.
+
+![n](./formulas/n.svg) - number of features.
+
+## Density Estimation
+
+So we have a training set:
+
+![Training Set](./formulas/training-set.svg)
+
+![x-in-R](./formulas/x-in-R.svg)
+
+We assume that each feature of the training set is normally distributed:
+
+![x-1](./formulas/x-1.svg)
+
+![x-2](./formulas/x-2.svg)
+
+![x-n](./formulas/x-n.svg)
+
+Then:
+
+![p-x](./formulas/p-x.svg)
+
+![p-x-2](./formulas/p-x-2.svg)
+
+## Anomaly Detection Algorithm
+
+1. Choose features ![x-i](./formulas/x-i.svg) that might be indicative of anomalous examples (![Training Set](./formulas/training-set.svg)).
+2. Fit parameters ![params](./formulas/params.svg) using formulas:
+
+![mu-i](./formulas/mu-i.svg)
+
+![sigma-i](./formulas/sigma-i.svg)
+
+3. Given new example _x_, compute _p(x)_:
+
+![p-x-2](./formulas/p-x-2.svg)
+
+Anomaly if ![anomaly](./formulas/anomaly.svg)
+
+![epsilon](./formulas/epsilon.svg) - probability threshold.
+
 ## References
 
 - [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
