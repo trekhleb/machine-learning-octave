@@ -39,6 +39,8 @@ _Usage examples: market segmentation, social networks analysis, organize computi
 
 ### Anomaly Detection
 
+Anomaly detection (also outlier detection) is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.
+
 _Usage examples: intrusion detection, fraud detection, system health monitoring, removing anomalous data from the dataset etc._
 
 - [Anomaly Detection using Gaussian distribution](./anomaly-detection) - example: detect overloaded server.
