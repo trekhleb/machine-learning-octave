@@ -1,4 +1,4 @@
-# Machine Learning in Octave
+# Machine Learning in MatLab/Octave
 
 This repository contains MatLab/Octave examples of popular machine learning algorithms with code examples and mathematics behind them being explained.
 
