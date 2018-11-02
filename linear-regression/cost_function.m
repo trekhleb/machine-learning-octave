@@ -21,7 +21,7 @@ function [cost] = cost_function(X, y, theta, lambda)
     differences = hypothesis(X, theta) - y;
 
     % Calculate regularization parameter.
-    % Remmber that we should not regularize the parameter theta_zero.
+    % Remember that we should not regularize the parameter theta_zero.
     theta_cut = theta(2:end, 1);
     regularization_param = lambda * (theta_cut' * theta_cut);
 
