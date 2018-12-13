@@ -1,6 +1,6 @@
 # Machine Learning in MatLab/Octave
 
-_For Python/Jupyter version of this repository please check [homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) project._
+> _For Python/Jupyter version of this repository please check [homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) project._
 
 
 This repository contains MatLab/Octave examples of popular machine learning algorithms with code examples and mathematics behind them being explained.
